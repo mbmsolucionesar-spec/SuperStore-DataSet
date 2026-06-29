@@ -1,30 +1,23 @@
 from prefect import flow, task
 import subprocess
-from ingest import ingest_superstore
 
 @task
 def run_ingest():
-    df = ingest_superstore()
-    return df.shape
+    subprocess.run(["python", "flows/ingest.py"], check=True)
 
 @task
 def run_dbt():
-    # Ejecuta dbt dentro del contenedor
-    result = subprocess.run(["dbt", "run"], capture_output=True, text=True)
-    print(result.stdout)
-    if result.returncode != 0:
-        raise RuntimeError("Error en dbt run")
-    return "dbt run completado"
+    subprocess.run(["dbt", "run", "--project-dir", "dbt_project"], check=True)
 
-@flow(name="superstore_pipeline")
+@task
+def run_dashboard():
+    subprocess.run(["python", "dashboard/app.py"], check=True)
+
+@flow
 def pipeline():
-    # Paso 1: ingesta con Polars
-    rows, cols = run_ingest()
-    print(f"Ingesta completada: {rows} filas, {cols} columnas")
-
-    # Paso 2: transformación con dbt
-    dbt_status = run_dbt()
-    print(dbt_status)
+    run_ingest()
+    run_dbt()
+    run_dashboard()
 
 if __name__ == "__main__":
     pipeline()
