@@ -1,0 +1,1 @@
+{"_invocation_id": "af088986-d70b-46f8-984e-71849847f4d1", "linked": {"0": {"name": "model.superstore.stg_orders", "type": "model", "succ": [1]}, "1": {"name": "model.superstore.sales_summary", "type": "model"}}}
