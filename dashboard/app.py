@@ -41,7 +41,7 @@ ventas_df = df.groupby(["City","State/Province","Country/Region"], as_index=Fals
 print("=== DEBUG ventas_df ORIGINAL ===")
 print(ventas_df.head(10))
 
-# 🔹 Mapear países
+#  Mapear países
 country_map = {
     "United States": "US",
     "Canada": "CA"
@@ -49,7 +49,7 @@ country_map = {
 ventas_df = ventas_df.rename(columns={"State/Province":"State","Country/Region":"Country"})
 ventas_df["Country"] = ventas_df["Country"].map(country_map)
 
-# 🔹 Mapear estados (ejemplo parcial, puedes ampliar con todos los estados)
+#  Mapear estados (ejemplo parcial, puedes ampliar con todos los estados)
 state_map = {
     "California": "CA", "Texas": "TX", "New Mexico": "NM", "Virginia": "VA",
     "Pennsylvania": "PA", "Ohio": "OH", "South Dakota": "SD", "Illinois": "IL",
