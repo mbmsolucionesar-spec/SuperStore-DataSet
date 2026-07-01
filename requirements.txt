@@ -1,0 +1,10 @@
+dash==4.3.0
+plotly==6.8.0
+duckdb==1.5.4
+dbt-core==1.11.11
+dbt-duckdb==1.10.1
+pandas==3.0.4
+polars==1.42.0
+pyarrow==24.0.0
+prefect==3.7.6
+python-dotenv==1.2.2

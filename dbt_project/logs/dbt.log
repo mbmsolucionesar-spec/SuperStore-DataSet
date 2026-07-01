@@ -1,0 +1,1784 @@
+[0m02:14:22.955990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7445cda14470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7445cbf7dee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7445cb69e600>]}
+
+
+============================== 02:14:22.959695 | 9c4bbee5-c58d-47af-ab05-97f88d70f529 ==============================
+[0m02:14:22.959695 [info ] [MainThread]: Running with dbt=1.11.11
+[0m02:14:22.960221 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'empty': 'False', 'profiles_dir': '.', 'debug': 'False', 'indirect_selection': 'eager', 'quiet': 'False', 'log_format': 'default', 'partial_parse': 'True', 'use_colors': 'True', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt run --profiles-dir . --project-dir .', 'fail_fast': 'False', 'log_path': 'logs', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'write_json': 'True', 'printer_width': '80', 'version_check': 'True', 'static_parser': 'True', 'cache_selected_only': 'False', 'introspect': 'True'}
+[0m02:14:22.960582 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path ./dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m02:14:22.962105 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.07712374, "process_in_blocks": "0", "process_kernel_time": 0.351669, "process_mem_max_rss": "123516", "process_out_blocks": "8", "process_user_time": 2.341798}
+[0m02:14:22.962487 [debug] [MainThread]: Command `dbt run` failed at 02:14:22.962408 after 0.08 seconds
+[0m02:14:22.962762 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7445cafe7140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7445cb22abd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7445cbf7dee0>]}
+[0m02:14:22.963036 [debug] [MainThread]: Flushing usage events
+[0m02:14:24.012467 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:17:55.072697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73efbd969970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73efc08fd3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73efbe320380>]}
+
+
+============================== 02:17:55.075817 | cdd37f19-f481-43bb-87fc-f9e205a725d3 ==============================
+[0m02:17:55.075817 [info ] [MainThread]: Running with dbt=1.11.11
+[0m02:17:55.076287 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'log_path': 'dbt_project/logs', 'debug': 'False', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'quiet': 'False', 'write_json': 'True', 'log_cache_events': 'False', 'warn_error': 'None', 'use_colors': 'True', 'target_path': 'None', 'indirect_selection': 'eager', 'empty': 'False', 'profiles_dir': 'dbt_project', 'partial_parse': 'True', 'invocation_command': 'dbt run --project-dir dbt_project --profiles-dir dbt_project', 'static_parser': 'True', 'introspect': 'True', 'fail_fast': 'False', 'version_check': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True'}
+[0m02:17:55.078304 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'superstore'
+[0m02:17:55.079177 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.07654753, "process_in_blocks": "0", "process_kernel_time": 0.331352, "process_mem_max_rss": "123720", "process_out_blocks": "8", "process_user_time": 2.375356}
+[0m02:17:55.079539 [debug] [MainThread]: Command `dbt run` failed at 02:17:55.079461 after 0.08 seconds
+[0m02:17:55.079799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73efbd863530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73efbd889e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73efbd96bb30>]}
+[0m02:17:55.080084 [debug] [MainThread]: Flushing usage events
+[0m02:17:55.664797 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:19:43.108829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x730be04136b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x730be17274d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x730bdf8150a0>]}
+
+
+============================== 02:19:43.112040 | 454647f6-2eae-47fe-a446-8b3e3d56959a ==============================
+[0m02:19:43.112040 [info ] [MainThread]: Running with dbt=1.11.11
+[0m02:19:43.112504 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'False', 'debug': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'fail_fast': 'False', 'version_check': 'True', 'printer_width': '80', 'log_path': 'dbt_project/logs', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'partial_parse': 'True', 'write_json': 'True', 'indirect_selection': 'eager', 'static_parser': 'True', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt run --project-dir dbt_project --profiles-dir dbt_project', 'profiles_dir': 'dbt_project'}
+[0m02:19:43.115690 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m02:19:43.116252 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "superstore", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+[0m02:19:43.117080 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.08124314, "process_in_blocks": "0", "process_kernel_time": 0.311438, "process_mem_max_rss": "123460", "process_out_blocks": "16", "process_user_time": 2.363736}
+[0m02:19:43.117452 [debug] [MainThread]: Command `dbt run` failed at 02:19:43.117371 after 0.08 seconds
+[0m02:19:43.117711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x730bdfdbae40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x730bdf7753a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x730bdf54bcb0>]}
+[0m02:19:43.118003 [debug] [MainThread]: Flushing usage events
+[0m02:19:43.763493 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:20:47.994274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7148fc2a7500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7148fd116b40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7148fc3ad370>]}
+
+
+============================== 02:20:47.996884 | aee9c769-069d-4ec6-90dc-51512fdb550f ==============================
+[0m02:20:47.996884 [info ] [MainThread]: Running with dbt=1.11.11
+[0m02:20:47.997348 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'target_path': 'None', 'introspect': 'True', 'debug': 'False', 'static_parser': 'True', 'warn_error': 'None', 'empty': 'False', 'log_format': 'default', 'no_print': 'None', 'profiles_dir': 'dbt_project', 'fail_fast': 'False', 'log_cache_events': 'False', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'log_path': 'dbt_project/logs', 'printer_width': '80', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --project-dir dbt_project --profiles-dir dbt_project', 'cache_selected_only': 'False', 'use_experimental_parser': 'False'}
+[0m02:20:48.295614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'aee9c769-069d-4ec6-90dc-51512fdb550f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7148fd0b1bb0>]}
+[0m02:20:48.386623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'aee9c769-069d-4ec6-90dc-51512fdb550f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7148fecfade0>]}
+[0m02:20:48.388457 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m02:20:48.502804 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m02:20:48.503331 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m02:20:48.503877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'aee9c769-069d-4ec6-90dc-51512fdb550f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7148fc091370>]}
+[0m02:20:49.660162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aee9c769-069d-4ec6-90dc-51512fdb550f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7148f41077a0>]}
+[0m02:20:49.716561 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project/target/manifest.json
+[0m02:20:49.718063 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project/target/semantic_manifest.json
+[0m02:20:49.725604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'aee9c769-069d-4ec6-90dc-51512fdb550f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7148f424a540>]}
+[0m02:20:49.725953 [info ] [MainThread]: Found 2 models, 485 macros
+[0m02:20:49.726258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aee9c769-069d-4ec6-90dc-51512fdb550f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7148f41868a0>]}
+[0m02:20:49.727645 [info ] [MainThread]: 
+[0m02:20:49.727964 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m02:20:49.728259 [info ] [MainThread]: 
+[0m02:20:49.728832 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m02:20:49.732988 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_superstore'
+[0m02:20:49.771817 [debug] [ThreadPool]: Using duckdb connection "list_superstore"
+[0m02:20:49.772234 [debug] [ThreadPool]: On list_superstore: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "list_superstore"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"superstore"'
+    
+  
+  
+[0m02:20:49.772471 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:20:49.789942 [debug] [ThreadPool]: SQL status: OK in 0.017 seconds
+[0m02:20:49.791109 [debug] [ThreadPool]: On list_superstore: Close
+[0m02:20:49.791712 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_superstore, now create_superstore_analytics)
+[0m02:20:49.792084 [debug] [ThreadPool]: Creating schema "database: "superstore"
+schema: "analytics"
+"
+[0m02:20:49.797776 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:20:49.798040 [debug] [ThreadPool]: On create_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "create_superstore_analytics"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='superstore'
+        and type='sqlite'
+    
+  
+[0m02:20:49.798255 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:20:49.799527 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m02:20:49.800513 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:20:49.800740 [debug] [ThreadPool]: On create_superstore_analytics: BEGIN
+[0m02:20:49.801408 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m02:20:49.801709 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:20:49.801999 [debug] [ThreadPool]: On create_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "create_superstore_analytics"} */
+
+    
+    
+        create schema if not exists "superstore"."analytics"
+    
+[0m02:20:49.802662 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m02:20:49.803463 [debug] [ThreadPool]: On create_superstore_analytics: COMMIT
+[0m02:20:49.803806 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:20:49.805062 [debug] [ThreadPool]: On create_superstore_analytics: COMMIT
+[0m02:20:49.838901 [debug] [ThreadPool]: SQL status: OK in 0.033 seconds
+[0m02:20:49.839307 [debug] [ThreadPool]: On create_superstore_analytics: Close
+[0m02:20:49.840744 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_superstore_analytics, now list_superstore_analytics)
+[0m02:20:49.846237 [debug] [ThreadPool]: Using duckdb connection "list_superstore_analytics"
+[0m02:20:49.846551 [debug] [ThreadPool]: On list_superstore_analytics: BEGIN
+[0m02:20:49.846810 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:20:49.847888 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m02:20:49.848165 [debug] [ThreadPool]: Using duckdb connection "list_superstore_analytics"
+[0m02:20:49.848429 [debug] [ThreadPool]: On list_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "list_superstore_analytics"} */
+select
+      'superstore' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'analytics'
+    and lower(table_catalog) = 'superstore'
+  
+[0m02:20:49.851981 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m02:20:49.852944 [debug] [ThreadPool]: On list_superstore_analytics: ROLLBACK
+[0m02:20:49.853960 [debug] [ThreadPool]: Failed to rollback 'list_superstore_analytics'
+[0m02:20:49.854225 [debug] [ThreadPool]: On list_superstore_analytics: Close
+[0m02:20:49.855044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aee9c769-069d-4ec6-90dc-51512fdb550f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7148fd08a9f0>]}
+[0m02:20:49.855468 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:20:49.855741 [debug] [MainThread]: On master: BEGIN
+[0m02:20:49.855990 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:20:49.856812 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m02:20:49.857156 [debug] [MainThread]: On master: COMMIT
+[0m02:20:49.857470 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:20:49.857685 [debug] [MainThread]: On master: COMMIT
+[0m02:20:49.858262 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m02:20:49.858649 [debug] [MainThread]: On master: Close
+[0m02:20:49.862669 [debug] [Thread-1 (]: Began running node model.superstore.stg_orders
+[0m02:20:49.863081 [info ] [Thread-1 (]: 1 of 2 START sql view model analytics.stg_orders ............................... [RUN]
+[0m02:20:49.863463 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_superstore_analytics, now model.superstore.stg_orders)
+[0m02:20:49.863727 [debug] [Thread-1 (]: Began compiling node model.superstore.stg_orders
+[0m02:20:49.869042 [debug] [Thread-1 (]: Writing injected SQL for node "model.superstore.stg_orders"
+[0m02:20:49.871608 [debug] [Thread-1 (]: Began executing node model.superstore.stg_orders
+[0m02:20:49.898433 [debug] [Thread-1 (]: Writing runtime sql for node "model.superstore.stg_orders"
+[0m02:20:49.900972 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:20:49.901271 [debug] [Thread-1 (]: On model.superstore.stg_orders: BEGIN
+[0m02:20:49.901629 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:20:49.903743 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:20:49.904359 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:20:49.904657 [debug] [Thread-1 (]: On model.superstore.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+
+  
+  create view "superstore"."analytics"."stg_orders__dbt_tmp" as (
+    -- staging de la tabla raw
+SELECT
+    "Order Date"::DATE AS order_date,
+    "Customer Name" AS customer_name,
+    "Category" AS category,
+    "Region" AS region,
+    "Sales"::FLOAT AS sales,
+    "Discount"::FLOAT AS discount,
+    "Profit"::FLOAT AS profit
+FROM raw_superstore;
+  );
+
+[0m02:20:49.905641 [debug] [Thread-1 (]: DuckDB adapter: duckdb error: Parser Error: syntax error at or near ";"
+
+LINE 14: FROM raw_superstore;
+                            ^
+[0m02:20:49.905945 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+
+  
+  create view "superstore"."analytics"."stg_orders__dbt_tmp" as (
+    -- staging de la tabla raw
+SELECT
+    "Order Date"::DATE AS order_date,
+    "Customer Name" AS customer_name,
+    "Category" AS category,
+    "Region" AS region,
+    "Sales"::FLOAT AS sales,
+    "Discount"::FLOAT AS discount,
+    "Profit"::FLOAT AS profit
+FROM raw_superstore;
+  );
+
+[0m02:20:49.906208 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m02:20:49.906486 [debug] [Thread-1 (]: On model.superstore.stg_orders: ROLLBACK
+[0m02:20:49.907602 [debug] [Thread-1 (]: Failed to rollback 'model.superstore.stg_orders'
+[0m02:20:49.907961 [debug] [Thread-1 (]: On model.superstore.stg_orders: Close
+[0m02:20:49.911947 [debug] [Thread-1 (]: Runtime Error in model stg_orders (models/staging/stg_orders.sql)
+  Parser Error: syntax error at or near ";"
+  
+  LINE 14: FROM raw_superstore;
+                              ^
+[0m02:20:49.913225 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'aee9c769-069d-4ec6-90dc-51512fdb550f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7148f4110830>]}
+[0m02:20:49.913712 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model analytics.stg_orders ...................... [[31mERROR[0m in 0.05s]
+[0m02:20:49.914195 [debug] [Thread-1 (]: Finished running node model.superstore.stg_orders
+[0m02:20:49.914701 [debug] [Thread-4 (]: Marking all children of 'model.superstore.stg_orders' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_orders (models/staging/stg_orders.sql)
+  Parser Error: syntax error at or near ";"
+  
+  LINE 14: FROM raw_superstore;
+                              ^.
+[0m02:20:49.916146 [debug] [Thread-1 (]: Began running node model.superstore.sales_summary
+[0m02:20:49.916480 [info ] [Thread-1 (]: 2 of 2 SKIP relation analytics.sales_summary ................................... [[33mSKIP[0m]
+[0m02:20:49.916843 [debug] [Thread-1 (]: Finished running node model.superstore.sales_summary
+[0m02:20:49.918523 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:20:49.918823 [debug] [MainThread]: On master: BEGIN
+[0m02:20:49.919108 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m02:20:49.920004 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m02:20:49.920314 [debug] [MainThread]: On master: COMMIT
+[0m02:20:49.920586 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:20:49.920837 [debug] [MainThread]: On master: COMMIT
+[0m02:20:49.921645 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m02:20:49.921969 [debug] [MainThread]: On master: Close
+[0m02:20:49.922309 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:20:49.922523 [debug] [MainThread]: Connection 'model.superstore.stg_orders' was properly closed.
+[0m02:20:49.922762 [info ] [MainThread]: 
+[0m02:20:49.923063 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 0.19 seconds (0.19s).
+[0m02:20:49.923735 [debug] [MainThread]: Command end result
+[0m02:20:49.947419 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project/target/manifest.json
+[0m02:20:49.949158 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project/target/semantic_manifest.json
+[0m02:20:49.954367 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt_project/target/run_results.json
+[0m02:20:49.954652 [info ] [MainThread]: 
+[0m02:20:49.954979 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m02:20:49.955267 [info ] [MainThread]: 
+[0m02:20:49.955633 [error] [MainThread]: [31mFailure in model stg_orders (models/staging/stg_orders.sql)[0m
+[0m02:20:49.955958 [error] [MainThread]:   Runtime Error in model stg_orders (models/staging/stg_orders.sql)
+  Parser Error: syntax error at or near ";"
+  
+  LINE 14: FROM raw_superstore;
+                              ^
+[0m02:20:49.956237 [info ] [MainThread]: 
+[0m02:20:49.956566 [info ] [MainThread]:   compiled code at target/compiled/superstore/models/staging/stg_orders.sql
+[0m02:20:49.956829 [info ] [MainThread]: 
+[0m02:20:49.957164 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=2
+[0m02:20:49.957951 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.035742, "process_in_blocks": "296", "process_kernel_time": 0.527158, "process_mem_max_rss": "182836", "process_out_blocks": "3232", "process_user_time": 4.137394}
+[0m02:20:49.958309 [debug] [MainThread]: Command `dbt run` failed at 02:20:49.958210 after 2.04 seconds
+[0m02:20:49.958589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7148fc0c9730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7148fc80e7b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7148fc80fce0>]}
+[0m02:20:49.958850 [debug] [MainThread]: Flushing usage events
+[0m02:20:50.613420 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:22:48.605347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896d04792b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896d0811220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896d08f20f0>]}
+
+
+============================== 02:22:48.607925 | 04b5aec0-339c-4b10-8207-30516cd6c022 ==============================
+[0m02:22:48.607925 [info ] [MainThread]: Running with dbt=1.11.11
+[0m02:22:48.608363 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'partial_parse': 'True', 'static_parser': 'True', 'introspect': 'True', 'log_path': 'dbt_project/logs', 'use_colors': 'True', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'no_print': 'None', 'profiles_dir': 'dbt_project', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'quiet': 'False', 'version_check': 'True', 'invocation_command': 'dbt run --project-dir dbt_project --profiles-dir dbt_project', 'warn_error': 'None', 'log_format': 'default'}
+[0m02:22:48.867153 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '04b5aec0-339c-4b10-8207-30516cd6c022', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896c9340470>]}
+[0m02:22:48.945504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '04b5aec0-339c-4b10-8207-30516cd6c022', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896d0c3d7f0>]}
+[0m02:22:48.947267 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m02:22:49.044686 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m02:22:49.200069 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m02:22:49.200574 [debug] [MainThread]: Partial parsing: updated file: superstore://models/staging/stg_orders.sql
+[0m02:22:49.486312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '04b5aec0-339c-4b10-8207-30516cd6c022', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896c8e59010>]}
+[0m02:22:49.544906 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project/target/manifest.json
+[0m02:22:49.546424 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project/target/semantic_manifest.json
+[0m02:22:49.552349 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '04b5aec0-339c-4b10-8207-30516cd6c022', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896c8ef5940>]}
+[0m02:22:49.552698 [info ] [MainThread]: Found 2 models, 485 macros
+[0m02:22:49.552992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '04b5aec0-339c-4b10-8207-30516cd6c022', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896c8ed8560>]}
+[0m02:22:49.554587 [info ] [MainThread]: 
+[0m02:22:49.554920 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m02:22:49.555186 [info ] [MainThread]: 
+[0m02:22:49.555634 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m02:22:49.559885 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_superstore'
+[0m02:22:49.598030 [debug] [ThreadPool]: Using duckdb connection "list_superstore"
+[0m02:22:49.598387 [debug] [ThreadPool]: On list_superstore: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "list_superstore"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"superstore"'
+    
+  
+  
+[0m02:22:49.598683 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:22:49.616680 [debug] [ThreadPool]: SQL status: OK in 0.018 seconds
+[0m02:22:49.617858 [debug] [ThreadPool]: On list_superstore: Close
+[0m02:22:49.618520 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_superstore, now create_superstore_analytics)
+[0m02:22:49.618868 [debug] [ThreadPool]: Creating schema "database: "superstore"
+schema: "analytics"
+"
+[0m02:22:49.626552 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:22:49.626924 [debug] [ThreadPool]: On create_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "create_superstore_analytics"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='superstore'
+        and type='sqlite'
+    
+  
+[0m02:22:49.627168 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:22:49.628325 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m02:22:49.629355 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:22:49.629589 [debug] [ThreadPool]: On create_superstore_analytics: BEGIN
+[0m02:22:49.630209 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m02:22:49.630518 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:22:49.630749 [debug] [ThreadPool]: On create_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "create_superstore_analytics"} */
+
+    
+    
+        create schema if not exists "superstore"."analytics"
+    
+[0m02:22:49.631375 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m02:22:49.632013 [debug] [ThreadPool]: On create_superstore_analytics: COMMIT
+[0m02:22:49.632248 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:22:49.632470 [debug] [ThreadPool]: On create_superstore_analytics: COMMIT
+[0m02:22:49.633009 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m02:22:49.633250 [debug] [ThreadPool]: On create_superstore_analytics: Close
+[0m02:22:49.634303 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_superstore_analytics, now list_superstore_analytics)
+[0m02:22:49.638954 [debug] [ThreadPool]: Using duckdb connection "list_superstore_analytics"
+[0m02:22:49.639213 [debug] [ThreadPool]: On list_superstore_analytics: BEGIN
+[0m02:22:49.639422 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:22:49.640369 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m02:22:49.640604 [debug] [ThreadPool]: Using duckdb connection "list_superstore_analytics"
+[0m02:22:49.640823 [debug] [ThreadPool]: On list_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "list_superstore_analytics"} */
+select
+      'superstore' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'analytics'
+    and lower(table_catalog) = 'superstore'
+  
+[0m02:22:49.643800 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m02:22:49.644913 [debug] [ThreadPool]: On list_superstore_analytics: ROLLBACK
+[0m02:22:49.645993 [debug] [ThreadPool]: Failed to rollback 'list_superstore_analytics'
+[0m02:22:49.646256 [debug] [ThreadPool]: On list_superstore_analytics: Close
+[0m02:22:49.646847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '04b5aec0-339c-4b10-8207-30516cd6c022', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896c8d17f20>]}
+[0m02:22:49.647196 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:22:49.647420 [debug] [MainThread]: On master: BEGIN
+[0m02:22:49.647625 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:22:49.648282 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m02:22:49.648523 [debug] [MainThread]: On master: COMMIT
+[0m02:22:49.648821 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:22:49.649047 [debug] [MainThread]: On master: COMMIT
+[0m02:22:49.649637 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m02:22:49.649873 [debug] [MainThread]: On master: Close
+[0m02:22:49.652146 [debug] [Thread-1 (]: Began running node model.superstore.stg_orders
+[0m02:22:49.652626 [info ] [Thread-1 (]: 1 of 2 START sql view model analytics.stg_orders ............................... [RUN]
+[0m02:22:49.653030 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_superstore_analytics, now model.superstore.stg_orders)
+[0m02:22:49.653339 [debug] [Thread-1 (]: Began compiling node model.superstore.stg_orders
+[0m02:22:49.659816 [debug] [Thread-1 (]: Writing injected SQL for node "model.superstore.stg_orders"
+[0m02:22:49.660418 [debug] [Thread-1 (]: Began executing node model.superstore.stg_orders
+[0m02:22:49.687201 [debug] [Thread-1 (]: Writing runtime sql for node "model.superstore.stg_orders"
+[0m02:22:49.687811 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:22:49.688083 [debug] [Thread-1 (]: On model.superstore.stg_orders: BEGIN
+[0m02:22:49.688330 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:22:49.689467 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:22:49.689912 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:22:49.690297 [debug] [Thread-1 (]: On model.superstore.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+
+  
+  create view "superstore"."analytics"."stg_orders__dbt_tmp" as (
+    
+
+SELECT
+    "Row ID" AS row_id,
+    "Order ID" AS order_id,
+    "Order Date"::DATE AS order_date,
+    "Ship Date"::DATE AS ship_date,
+    "Ship Mode" AS ship_mode,
+    "Customer ID" AS customer_id,
+    "Customer Name" AS customer_name,
+    "Segment" AS segment,
+    "Country" AS country,
+    "City" AS city,
+    "State" AS state,
+    "Postal Code" AS postal_code,
+    "Region" AS region,
+    "Product ID" AS product_id,
+    "Category" AS category,
+    "Sub-Category" AS sub_category,
+    "Product Name" AS product_name,
+    "Sales"::DOUBLE AS sales,
+    "Quantity"::INTEGER AS quantity,
+    "Discount"::DOUBLE AS discount,
+    "Profit"::DOUBLE AS profit
+FROM raw_superstore
+  );
+
+[0m02:22:49.691862 [debug] [Thread-1 (]: DuckDB adapter: duckdb error: Binder Error: Column "Country" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined
+[0m02:22:49.692355 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+
+  
+  create view "superstore"."analytics"."stg_orders__dbt_tmp" as (
+    
+
+SELECT
+    "Row ID" AS row_id,
+    "Order ID" AS order_id,
+    "Order Date"::DATE AS order_date,
+    "Ship Date"::DATE AS ship_date,
+    "Ship Mode" AS ship_mode,
+    "Customer ID" AS customer_id,
+    "Customer Name" AS customer_name,
+    "Segment" AS segment,
+    "Country" AS country,
+    "City" AS city,
+    "State" AS state,
+    "Postal Code" AS postal_code,
+    "Region" AS region,
+    "Product ID" AS product_id,
+    "Category" AS category,
+    "Sub-Category" AS sub_category,
+    "Product Name" AS product_name,
+    "Sales"::DOUBLE AS sales,
+    "Quantity"::INTEGER AS quantity,
+    "Discount"::DOUBLE AS discount,
+    "Profit"::DOUBLE AS profit
+FROM raw_superstore
+  );
+
+[0m02:22:49.692636 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m02:22:49.692894 [debug] [Thread-1 (]: On model.superstore.stg_orders: ROLLBACK
+[0m02:22:49.694062 [debug] [Thread-1 (]: Failed to rollback 'model.superstore.stg_orders'
+[0m02:22:49.694456 [debug] [Thread-1 (]: On model.superstore.stg_orders: Close
+[0m02:22:49.697210 [debug] [Thread-1 (]: Runtime Error in model stg_orders (models/staging/stg_orders.sql)
+  Binder Error: Column "Country" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined
+[0m02:22:49.698506 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '04b5aec0-339c-4b10-8207-30516cd6c022', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896c925c3b0>]}
+[0m02:22:49.699014 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model analytics.stg_orders ...................... [[31mERROR[0m in 0.04s]
+[0m02:22:49.699544 [debug] [Thread-1 (]: Finished running node model.superstore.stg_orders
+[0m02:22:49.700069 [debug] [Thread-4 (]: Marking all children of 'model.superstore.stg_orders' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_orders (models/staging/stg_orders.sql)
+  Binder Error: Column "Country" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined.
+[0m02:22:49.701594 [debug] [Thread-1 (]: Began running node model.superstore.sales_summary
+[0m02:22:49.701926 [info ] [Thread-1 (]: 2 of 2 SKIP relation analytics.sales_summary ................................... [[33mSKIP[0m]
+[0m02:22:49.702314 [debug] [Thread-1 (]: Finished running node model.superstore.sales_summary
+[0m02:22:49.703728 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:22:49.703970 [debug] [MainThread]: On master: BEGIN
+[0m02:22:49.704179 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m02:22:49.704963 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m02:22:49.705296 [debug] [MainThread]: On master: COMMIT
+[0m02:22:49.705634 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:22:49.706037 [debug] [MainThread]: On master: COMMIT
+[0m02:22:49.706613 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m02:22:49.706885 [debug] [MainThread]: On master: Close
+[0m02:22:49.707226 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:22:49.707434 [debug] [MainThread]: Connection 'model.superstore.stg_orders' was properly closed.
+[0m02:22:49.707663 [info ] [MainThread]: 
+[0m02:22:49.708017 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 0.15 seconds (0.15s).
+[0m02:22:49.708614 [debug] [MainThread]: Command end result
+[0m02:22:49.733556 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project/target/manifest.json
+[0m02:22:49.735086 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project/target/semantic_manifest.json
+[0m02:22:49.740319 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt_project/target/run_results.json
+[0m02:22:49.740596 [info ] [MainThread]: 
+[0m02:22:49.741083 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m02:22:49.742045 [info ] [MainThread]: 
+[0m02:22:49.742461 [error] [MainThread]: [31mFailure in model stg_orders (models/staging/stg_orders.sql)[0m
+[0m02:22:49.742906 [error] [MainThread]:   Runtime Error in model stg_orders (models/staging/stg_orders.sql)
+  Binder Error: Column "Country" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined
+[0m02:22:49.743191 [info ] [MainThread]: 
+[0m02:22:49.743530 [info ] [MainThread]:   compiled code at target/compiled/superstore/models/staging/stg_orders.sql
+[0m02:22:49.743808 [info ] [MainThread]: 
+[0m02:22:49.744110 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=2
+[0m02:22:49.745031 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.210198, "process_in_blocks": "0", "process_kernel_time": 0.48695, "process_mem_max_rss": "183024", "process_out_blocks": "3224", "process_user_time": 3.368737}
+[0m02:22:49.745374 [debug] [MainThread]: Command `dbt run` failed at 02:22:49.745301 after 1.21 seconds
+[0m02:22:49.745692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896d08c9b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896b2a41c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896b2a40b30>]}
+[0m02:22:49.745962 [debug] [MainThread]: Flushing usage events
+[0m02:22:50.498740 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:24:43.964916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7918c2969490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7918c1e92de0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7918c196dc10>]}
+
+
+============================== 02:24:43.967645 | 67296b6c-baf4-4a02-871a-290d57d485b0 ==============================
+[0m02:24:43.967645 [info ] [MainThread]: Running with dbt=1.11.11
+[0m02:24:43.968077 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'cache_selected_only': 'False', 'static_parser': 'True', 'profiles_dir': 'dbt_project', 'quiet': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'printer_width': '80', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'log_path': 'dbt_project/logs', 'write_json': 'True', 'version_check': 'True', 'introspect': 'True', 'use_colors': 'True', 'fail_fast': 'False', 'invocation_command': 'dbt run --project-dir dbt_project --profiles-dir dbt_project', 'warn_error': 'None', 'log_cache_events': 'False', 'empty': 'False', 'log_format': 'default', 'indirect_selection': 'eager'}
+[0m02:24:44.216245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '67296b6c-baf4-4a02-871a-290d57d485b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7918c181eb70>]}
+[0m02:24:44.293303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '67296b6c-baf4-4a02-871a-290d57d485b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7918c16341d0>]}
+[0m02:24:44.294952 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m02:24:44.394655 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m02:24:44.568542 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m02:24:44.568865 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m02:24:44.569076 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m02:24:44.596720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '67296b6c-baf4-4a02-871a-290d57d485b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7918c1925ac0>]}
+[0m02:24:44.651453 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project/target/manifest.json
+[0m02:24:44.653394 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project/target/semantic_manifest.json
+[0m02:24:44.659173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '67296b6c-baf4-4a02-871a-290d57d485b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7918ba431520>]}
+[0m02:24:44.659533 [info ] [MainThread]: Found 2 models, 485 macros
+[0m02:24:44.659828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '67296b6c-baf4-4a02-871a-290d57d485b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7918c4385a90>]}
+[0m02:24:44.661279 [info ] [MainThread]: 
+[0m02:24:44.661586 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m02:24:44.661852 [info ] [MainThread]: 
+[0m02:24:44.662320 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m02:24:44.666130 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_superstore'
+[0m02:24:44.705970 [debug] [ThreadPool]: Using duckdb connection "list_superstore"
+[0m02:24:44.706310 [debug] [ThreadPool]: On list_superstore: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "list_superstore"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"superstore"'
+    
+  
+  
+[0m02:24:44.706562 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:24:44.724686 [debug] [ThreadPool]: SQL status: OK in 0.018 seconds
+[0m02:24:44.726059 [debug] [ThreadPool]: On list_superstore: Close
+[0m02:24:44.726950 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_superstore, now create_superstore_analytics)
+[0m02:24:44.727416 [debug] [ThreadPool]: Creating schema "database: "superstore"
+schema: "analytics"
+"
+[0m02:24:44.734175 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:24:44.734433 [debug] [ThreadPool]: On create_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "create_superstore_analytics"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='superstore'
+        and type='sqlite'
+    
+  
+[0m02:24:44.734646 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:24:44.736073 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m02:24:44.737579 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:24:44.737961 [debug] [ThreadPool]: On create_superstore_analytics: BEGIN
+[0m02:24:44.738642 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m02:24:44.738873 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:24:44.739182 [debug] [ThreadPool]: On create_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "create_superstore_analytics"} */
+
+    
+    
+        create schema if not exists "superstore"."analytics"
+    
+[0m02:24:44.739821 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m02:24:44.740623 [debug] [ThreadPool]: On create_superstore_analytics: COMMIT
+[0m02:24:44.740915 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:24:44.741174 [debug] [ThreadPool]: On create_superstore_analytics: COMMIT
+[0m02:24:44.741816 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m02:24:44.742125 [debug] [ThreadPool]: On create_superstore_analytics: Close
+[0m02:24:44.743386 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_superstore_analytics, now list_superstore_analytics)
+[0m02:24:44.748867 [debug] [ThreadPool]: Using duckdb connection "list_superstore_analytics"
+[0m02:24:44.749181 [debug] [ThreadPool]: On list_superstore_analytics: BEGIN
+[0m02:24:44.749428 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:24:44.750358 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m02:24:44.750684 [debug] [ThreadPool]: Using duckdb connection "list_superstore_analytics"
+[0m02:24:44.751056 [debug] [ThreadPool]: On list_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "list_superstore_analytics"} */
+select
+      'superstore' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'analytics'
+    and lower(table_catalog) = 'superstore'
+  
+[0m02:24:44.754755 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m02:24:44.756105 [debug] [ThreadPool]: On list_superstore_analytics: ROLLBACK
+[0m02:24:44.757266 [debug] [ThreadPool]: Failed to rollback 'list_superstore_analytics'
+[0m02:24:44.757498 [debug] [ThreadPool]: On list_superstore_analytics: Close
+[0m02:24:44.758050 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '67296b6c-baf4-4a02-871a-290d57d485b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7918c43042f0>]}
+[0m02:24:44.758480 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:24:44.758783 [debug] [MainThread]: On master: BEGIN
+[0m02:24:44.759150 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:24:44.759972 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m02:24:44.760254 [debug] [MainThread]: On master: COMMIT
+[0m02:24:44.760517 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:24:44.760803 [debug] [MainThread]: On master: COMMIT
+[0m02:24:44.761421 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m02:24:44.761712 [debug] [MainThread]: On master: Close
+[0m02:24:44.764372 [debug] [Thread-1 (]: Began running node model.superstore.stg_orders
+[0m02:24:44.764771 [info ] [Thread-1 (]: 1 of 2 START sql view model analytics.stg_orders ............................... [RUN]
+[0m02:24:44.765142 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_superstore_analytics, now model.superstore.stg_orders)
+[0m02:24:44.765402 [debug] [Thread-1 (]: Began compiling node model.superstore.stg_orders
+[0m02:24:44.772683 [debug] [Thread-1 (]: Writing injected SQL for node "model.superstore.stg_orders"
+[0m02:24:44.773275 [debug] [Thread-1 (]: Began executing node model.superstore.stg_orders
+[0m02:24:44.804453 [debug] [Thread-1 (]: Writing runtime sql for node "model.superstore.stg_orders"
+[0m02:24:44.805308 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:24:44.805648 [debug] [Thread-1 (]: On model.superstore.stg_orders: BEGIN
+[0m02:24:44.806050 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:24:44.807168 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:24:44.807515 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:24:44.807797 [debug] [Thread-1 (]: On model.superstore.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+
+  
+  create view "superstore"."analytics"."stg_orders__dbt_tmp" as (
+    
+
+SELECT
+    "Row ID" AS row_id,
+    "Order ID" AS order_id,
+    "Order Date"::DATE AS order_date,
+    "Ship Date"::DATE AS ship_date,
+    "Ship Mode" AS ship_mode,
+    "Customer ID" AS customer_id,
+    "Customer Name" AS customer_name,
+    "Segment" AS segment,
+    "Country" AS country,
+    "City" AS city,
+    "State" AS state,
+    "Postal Code" AS postal_code,
+    "Region" AS region,
+    "Product ID" AS product_id,
+    "Category" AS category,
+    "Sub-Category" AS sub_category,
+    "Product Name" AS product_name,
+    "Sales"::DOUBLE AS sales,
+    "Quantity"::INTEGER AS quantity,
+    "Discount"::DOUBLE AS discount,
+    "Profit"::DOUBLE AS profit
+FROM raw_superstore
+  );
+
+[0m02:24:44.808803 [debug] [Thread-1 (]: DuckDB adapter: duckdb error: Binder Error: Column "Country" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined
+[0m02:24:44.809096 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+
+  
+  create view "superstore"."analytics"."stg_orders__dbt_tmp" as (
+    
+
+SELECT
+    "Row ID" AS row_id,
+    "Order ID" AS order_id,
+    "Order Date"::DATE AS order_date,
+    "Ship Date"::DATE AS ship_date,
+    "Ship Mode" AS ship_mode,
+    "Customer ID" AS customer_id,
+    "Customer Name" AS customer_name,
+    "Segment" AS segment,
+    "Country" AS country,
+    "City" AS city,
+    "State" AS state,
+    "Postal Code" AS postal_code,
+    "Region" AS region,
+    "Product ID" AS product_id,
+    "Category" AS category,
+    "Sub-Category" AS sub_category,
+    "Product Name" AS product_name,
+    "Sales"::DOUBLE AS sales,
+    "Quantity"::INTEGER AS quantity,
+    "Discount"::DOUBLE AS discount,
+    "Profit"::DOUBLE AS profit
+FROM raw_superstore
+  );
+
+[0m02:24:44.809363 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m02:24:44.809618 [debug] [Thread-1 (]: On model.superstore.stg_orders: ROLLBACK
+[0m02:24:44.810678 [debug] [Thread-1 (]: Failed to rollback 'model.superstore.stg_orders'
+[0m02:24:44.811074 [debug] [Thread-1 (]: On model.superstore.stg_orders: Close
+[0m02:24:44.813942 [debug] [Thread-1 (]: Runtime Error in model stg_orders (models/staging/stg_orders.sql)
+  Binder Error: Column "Country" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined
+[0m02:24:44.815182 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '67296b6c-baf4-4a02-871a-290d57d485b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7918b8f97980>]}
+[0m02:24:44.815654 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model analytics.stg_orders ...................... [[31mERROR[0m in 0.05s]
+[0m02:24:44.816133 [debug] [Thread-1 (]: Finished running node model.superstore.stg_orders
+[0m02:24:44.816730 [debug] [Thread-4 (]: Marking all children of 'model.superstore.stg_orders' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_orders (models/staging/stg_orders.sql)
+  Binder Error: Column "Country" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined.
+[0m02:24:44.818435 [debug] [Thread-1 (]: Began running node model.superstore.sales_summary
+[0m02:24:44.818857 [info ] [Thread-1 (]: 2 of 2 SKIP relation analytics.sales_summary ................................... [[33mSKIP[0m]
+[0m02:24:44.819953 [debug] [Thread-1 (]: Finished running node model.superstore.sales_summary
+[0m02:24:44.821882 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:24:44.822127 [debug] [MainThread]: On master: BEGIN
+[0m02:24:44.822331 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m02:24:44.823051 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m02:24:44.823348 [debug] [MainThread]: On master: COMMIT
+[0m02:24:44.823613 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:24:44.823864 [debug] [MainThread]: On master: COMMIT
+[0m02:24:44.824437 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m02:24:44.824723 [debug] [MainThread]: On master: Close
+[0m02:24:44.825057 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:24:44.825302 [debug] [MainThread]: Connection 'model.superstore.stg_orders' was properly closed.
+[0m02:24:44.825624 [info ] [MainThread]: 
+[0m02:24:44.826123 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 0.16 seconds (0.16s).
+[0m02:24:44.826988 [debug] [MainThread]: Command end result
+[0m02:24:44.855216 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project/target/manifest.json
+[0m02:24:44.856623 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project/target/semantic_manifest.json
+[0m02:24:44.861312 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt_project/target/run_results.json
+[0m02:24:44.861547 [info ] [MainThread]: 
+[0m02:24:44.861866 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m02:24:44.862151 [info ] [MainThread]: 
+[0m02:24:44.862480 [error] [MainThread]: [31mFailure in model stg_orders (models/staging/stg_orders.sql)[0m
+[0m02:24:44.862814 [error] [MainThread]:   Runtime Error in model stg_orders (models/staging/stg_orders.sql)
+  Binder Error: Column "Country" referenced that exists in the SELECT clause - but this column cannot be referenced before it is defined
+[0m02:24:44.863114 [info ] [MainThread]: 
+[0m02:24:44.863420 [info ] [MainThread]:   compiled code at target/compiled/superstore/models/staging/stg_orders.sql
+[0m02:24:44.863682 [info ] [MainThread]: 
+[0m02:24:44.863973 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=2
+[0m02:24:44.864756 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.97539186, "process_in_blocks": "0", "process_kernel_time": 0.554816, "process_mem_max_rss": "178120", "process_out_blocks": "2184", "process_user_time": 3.161255}
+[0m02:24:44.865121 [debug] [MainThread]: Command `dbt run` failed at 02:24:44.865049 after 0.98 seconds
+[0m02:24:44.865387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7918c1a16720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7918b8f90590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7918c16de720>]}
+[0m02:24:44.865647 [debug] [MainThread]: Flushing usage events
+[0m02:24:45.478657 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:27:50.582876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d3fc931a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d3fb6f2480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d3fb211c70>]}
+
+
+============================== 02:27:50.585565 | 6fca34b0-cbf4-4902-ad76-8ce1660af254 ==============================
+[0m02:27:50.585565 [info ] [MainThread]: Running with dbt=1.11.11
+[0m02:27:50.586068 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'profiles_dir': 'dbt_project', 'debug': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'static_parser': 'True', 'invocation_command': 'dbt run --project-dir dbt_project --profiles-dir dbt_project', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'quiet': 'False', 'use_experimental_parser': 'False', 'use_colors': 'True', 'fail_fast': 'False', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'no_print': 'None', 'log_cache_events': 'False', 'empty': 'False', 'partial_parse': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'log_path': 'dbt_project/logs'}
+[0m02:27:50.836980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6fca34b0-cbf4-4902-ad76-8ce1660af254', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d3fab358e0>]}
+[0m02:27:50.916711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6fca34b0-cbf4-4902-ad76-8ce1660af254', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d3fb95bb00>]}
+[0m02:27:50.918289 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m02:27:51.019118 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m02:27:51.174427 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m02:27:51.174901 [debug] [MainThread]: Partial parsing: updated file: superstore://models/staging/stg_orders.sql
+[0m02:27:51.460142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6fca34b0-cbf4-4902-ad76-8ce1660af254', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d3f1f9c770>]}
+[0m02:27:51.516242 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project/target/manifest.json
+[0m02:27:51.517795 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project/target/semantic_manifest.json
+[0m02:27:51.523633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6fca34b0-cbf4-4902-ad76-8ce1660af254', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d3f1f9d7f0>]}
+[0m02:27:51.523964 [info ] [MainThread]: Found 2 models, 485 macros
+[0m02:27:51.524255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6fca34b0-cbf4-4902-ad76-8ce1660af254', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d3f1f829f0>]}
+[0m02:27:51.525799 [info ] [MainThread]: 
+[0m02:27:51.526165 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m02:27:51.526455 [info ] [MainThread]: 
+[0m02:27:51.526874 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m02:27:51.532430 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_superstore'
+[0m02:27:51.568315 [debug] [ThreadPool]: Using duckdb connection "list_superstore"
+[0m02:27:51.568712 [debug] [ThreadPool]: On list_superstore: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "list_superstore"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"superstore"'
+    
+  
+  
+[0m02:27:51.568967 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:27:51.587334 [debug] [ThreadPool]: SQL status: OK in 0.018 seconds
+[0m02:27:51.588573 [debug] [ThreadPool]: On list_superstore: Close
+[0m02:27:51.589250 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_superstore, now create_superstore_analytics)
+[0m02:27:51.589600 [debug] [ThreadPool]: Creating schema "database: "superstore"
+schema: "analytics"
+"
+[0m02:27:51.595386 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:27:51.595696 [debug] [ThreadPool]: On create_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "create_superstore_analytics"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='superstore'
+        and type='sqlite'
+    
+  
+[0m02:27:51.595921 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:27:51.597361 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m02:27:51.598734 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:27:51.599024 [debug] [ThreadPool]: On create_superstore_analytics: BEGIN
+[0m02:27:51.599744 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m02:27:51.599977 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:27:51.600190 [debug] [ThreadPool]: On create_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "create_superstore_analytics"} */
+
+    
+    
+        create schema if not exists "superstore"."analytics"
+    
+[0m02:27:51.600868 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m02:27:51.601531 [debug] [ThreadPool]: On create_superstore_analytics: COMMIT
+[0m02:27:51.601887 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:27:51.602116 [debug] [ThreadPool]: On create_superstore_analytics: COMMIT
+[0m02:27:51.602623 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m02:27:51.602864 [debug] [ThreadPool]: On create_superstore_analytics: Close
+[0m02:27:51.603953 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_superstore_analytics, now list_superstore_analytics)
+[0m02:27:51.608696 [debug] [ThreadPool]: Using duckdb connection "list_superstore_analytics"
+[0m02:27:51.608965 [debug] [ThreadPool]: On list_superstore_analytics: BEGIN
+[0m02:27:51.609173 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:27:51.609849 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m02:27:51.610084 [debug] [ThreadPool]: Using duckdb connection "list_superstore_analytics"
+[0m02:27:51.610304 [debug] [ThreadPool]: On list_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "list_superstore_analytics"} */
+select
+      'superstore' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'analytics'
+    and lower(table_catalog) = 'superstore'
+  
+[0m02:27:51.618196 [debug] [ThreadPool]: SQL status: OK in 0.008 seconds
+[0m02:27:51.619388 [debug] [ThreadPool]: On list_superstore_analytics: ROLLBACK
+[0m02:27:51.620594 [debug] [ThreadPool]: Failed to rollback 'list_superstore_analytics'
+[0m02:27:51.620934 [debug] [ThreadPool]: On list_superstore_analytics: Close
+[0m02:27:51.621610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6fca34b0-cbf4-4902-ad76-8ce1660af254', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d3fd7e6d50>]}
+[0m02:27:51.621981 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:27:51.622210 [debug] [MainThread]: On master: BEGIN
+[0m02:27:51.622469 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:27:51.623169 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m02:27:51.623410 [debug] [MainThread]: On master: COMMIT
+[0m02:27:51.623630 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:27:51.623838 [debug] [MainThread]: On master: COMMIT
+[0m02:27:51.624450 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m02:27:51.624728 [debug] [MainThread]: On master: Close
+[0m02:27:51.626835 [debug] [Thread-1 (]: Began running node model.superstore.stg_orders
+[0m02:27:51.627244 [info ] [Thread-1 (]: 1 of 2 START sql view model analytics.stg_orders ............................... [RUN]
+[0m02:27:51.627662 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_superstore_analytics, now model.superstore.stg_orders)
+[0m02:27:51.627940 [debug] [Thread-1 (]: Began compiling node model.superstore.stg_orders
+[0m02:27:51.634392 [debug] [Thread-1 (]: Writing injected SQL for node "model.superstore.stg_orders"
+[0m02:27:51.634968 [debug] [Thread-1 (]: Began executing node model.superstore.stg_orders
+[0m02:27:51.662292 [debug] [Thread-1 (]: Writing runtime sql for node "model.superstore.stg_orders"
+[0m02:27:51.662976 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:27:51.663258 [debug] [Thread-1 (]: On model.superstore.stg_orders: BEGIN
+[0m02:27:51.663568 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:27:51.664601 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:27:51.664900 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:27:51.665220 [debug] [Thread-1 (]: On model.superstore.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+
+  
+  create view "superstore"."analytics"."stg_orders__dbt_tmp" as (
+    
+
+SELECT
+    "Row ID" AS row_id,
+    "Order ID" AS order_id,
+    CAST("Order Date" AS DATE) AS order_date,
+    CAST("Ship Date" AS DATE) AS ship_date,
+    "Ship Mode" AS ship_mode,
+    "Customer ID" AS customer_id,
+    "Customer Name" AS customer_name,
+    "Segment" AS segment,
+    "Country/Region" AS country_region,
+    "City" AS city,
+    "State/Province" AS state_province,
+    "Postal Code" AS postal_code,
+    "Region" AS region,
+    "Product ID" AS product_id,
+    "Category" AS category,
+    "Sub-Category" AS sub_category,
+    "Product Name" AS product_name,
+    CAST("Sales" AS DOUBLE) AS sales,
+    CAST("Quantity" AS INTEGER) AS quantity,
+    CAST("Discount" AS DOUBLE) AS discount,
+    CAST("Profit" AS DOUBLE) AS profit
+FROM raw_superstore
+  );
+
+[0m02:27:51.666419 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:27:51.672381 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:27:51.672727 [debug] [Thread-1 (]: On model.superstore.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+alter view "superstore"."analytics"."stg_orders__dbt_tmp" rename to "stg_orders"
+[0m02:27:51.673628 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:27:51.685718 [debug] [Thread-1 (]: On model.superstore.stg_orders: COMMIT
+[0m02:27:51.686091 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:27:51.686351 [debug] [Thread-1 (]: On model.superstore.stg_orders: COMMIT
+[0m02:27:51.690093 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m02:27:51.695294 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:27:51.695723 [debug] [Thread-1 (]: On model.superstore.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+
+      drop view if exists "superstore"."analytics"."stg_orders__dbt_backup" cascade
+    
+[0m02:27:51.696680 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:27:51.698879 [debug] [Thread-1 (]: On model.superstore.stg_orders: Close
+[0m02:27:51.700173 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6fca34b0-cbf4-4902-ad76-8ce1660af254', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d3fd70a6c0>]}
+[0m02:27:51.700712 [info ] [Thread-1 (]: 1 of 2 OK created sql view model analytics.stg_orders .......................... [[32mOK[0m in 0.07s]
+[0m02:27:51.701236 [debug] [Thread-1 (]: Finished running node model.superstore.stg_orders
+[0m02:27:51.702015 [debug] [Thread-1 (]: Began running node model.superstore.sales_summary
+[0m02:27:51.702443 [info ] [Thread-1 (]: 2 of 2 START sql table model analytics.sales_summary ........................... [RUN]
+[0m02:27:51.702938 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.superstore.stg_orders, now model.superstore.sales_summary)
+[0m02:27:51.703498 [debug] [Thread-1 (]: Began compiling node model.superstore.sales_summary
+[0m02:27:51.705649 [debug] [Thread-1 (]: Writing injected SQL for node "model.superstore.sales_summary"
+[0m02:27:51.706682 [debug] [Thread-1 (]: Began executing node model.superstore.sales_summary
+[0m02:27:51.725718 [debug] [Thread-1 (]: Writing runtime sql for node "model.superstore.sales_summary"
+[0m02:27:51.726861 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m02:27:51.727160 [debug] [Thread-1 (]: On model.superstore.sales_summary: BEGIN
+[0m02:27:51.727409 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:27:51.728896 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:27:51.729418 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m02:27:51.729697 [debug] [Thread-1 (]: On model.superstore.sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.sales_summary"} */
+
+  
+    
+    
+
+    create  table
+      "superstore"."analytics"."sales_summary__dbt_tmp"
+  
+    as (
+      SELECT
+    region,
+    category,
+    SUM(sales) AS total_sales,
+    SUM(profit) AS total_profit,
+    AVG(discount) AS avg_discount
+FROM "superstore"."analytics"."stg_orders"
+GROUP BY region, category;
+    );
+  
+  
+[0m02:27:51.730353 [debug] [Thread-1 (]: DuckDB adapter: duckdb error: Parser Error: syntax error at or near ";"
+
+LINE 18: GROUP BY region, category;
+                                  ^
+[0m02:27:51.730639 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.sales_summary"} */
+
+  
+    
+    
+
+    create  table
+      "superstore"."analytics"."sales_summary__dbt_tmp"
+  
+    as (
+      SELECT
+    region,
+    category,
+    SUM(sales) AS total_sales,
+    SUM(profit) AS total_profit,
+    AVG(discount) AS avg_discount
+FROM "superstore"."analytics"."stg_orders"
+GROUP BY region, category;
+    );
+  
+  
+[0m02:27:51.731106 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m02:27:51.731374 [debug] [Thread-1 (]: On model.superstore.sales_summary: ROLLBACK
+[0m02:27:51.732599 [debug] [Thread-1 (]: Failed to rollback 'model.superstore.sales_summary'
+[0m02:27:51.733019 [debug] [Thread-1 (]: On model.superstore.sales_summary: Close
+[0m02:27:51.736018 [debug] [Thread-1 (]: Runtime Error in model sales_summary (models/marts/sales_summary.sql)
+  Parser Error: syntax error at or near ";"
+  
+  LINE 18: GROUP BY region, category;
+                                    ^
+[0m02:27:51.736426 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6fca34b0-cbf4-4902-ad76-8ce1660af254', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d3f138a930>]}
+[0m02:27:51.736940 [error] [Thread-1 (]: 2 of 2 ERROR creating sql table model analytics.sales_summary .................. [[31mERROR[0m in 0.03s]
+[0m02:27:51.737426 [debug] [Thread-1 (]: Finished running node model.superstore.sales_summary
+[0m02:27:51.737959 [debug] [Thread-4 (]: Marking all children of 'model.superstore.sales_summary' to be skipped because of status 'error'.  Reason: Runtime Error in model sales_summary (models/marts/sales_summary.sql)
+  Parser Error: syntax error at or near ";"
+  
+  LINE 18: GROUP BY region, category;
+                                    ^.
+[0m02:27:51.739941 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:27:51.740283 [debug] [MainThread]: On master: BEGIN
+[0m02:27:51.740552 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m02:27:51.741231 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m02:27:51.741467 [debug] [MainThread]: On master: COMMIT
+[0m02:27:51.741720 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:27:51.741928 [debug] [MainThread]: On master: COMMIT
+[0m02:27:51.742454 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m02:27:51.742697 [debug] [MainThread]: On master: Close
+[0m02:27:51.743110 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:27:51.743326 [debug] [MainThread]: Connection 'model.superstore.sales_summary' was properly closed.
+[0m02:27:51.743589 [info ] [MainThread]: 
+[0m02:27:51.743894 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 0.22 seconds (0.22s).
+[0m02:27:51.744632 [debug] [MainThread]: Command end result
+[0m02:27:51.769105 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project/target/manifest.json
+[0m02:27:51.770542 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project/target/semantic_manifest.json
+[0m02:27:51.776077 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt_project/target/run_results.json
+[0m02:27:51.776449 [info ] [MainThread]: 
+[0m02:27:51.776804 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m02:27:51.777284 [info ] [MainThread]: 
+[0m02:27:51.777690 [error] [MainThread]: [31mFailure in model sales_summary (models/marts/sales_summary.sql)[0m
+[0m02:27:51.778056 [error] [MainThread]:   Runtime Error in model sales_summary (models/marts/sales_summary.sql)
+  Parser Error: syntax error at or near ";"
+  
+  LINE 18: GROUP BY region, category;
+                                    ^
+[0m02:27:51.778339 [info ] [MainThread]: 
+[0m02:27:51.778692 [info ] [MainThread]:   compiled code at target/compiled/superstore/models/marts/sales_summary.sql
+[0m02:27:51.778967 [info ] [MainThread]: 
+[0m02:27:51.779265 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=2
+[0m02:27:51.780095 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.2767798, "process_in_blocks": "0", "process_kernel_time": 0.491988, "process_mem_max_rss": "183420", "process_out_blocks": "3256", "process_user_time": 3.475921}
+[0m02:27:51.780482 [debug] [MainThread]: Command `dbt run` failed at 02:27:51.780397 after 1.28 seconds
+[0m02:27:51.780776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d3facf7aa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d3fb198a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d3f39c6030>]}
+[0m02:27:51.781056 [debug] [MainThread]: Flushing usage events
+[0m02:27:52.455988 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:29:35.474470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7564ddd05fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7564de5fa510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7564dda23fb0>]}
+
+
+============================== 02:29:35.477774 | c9fbeeb7-69a0-41a8-bc77-cd23037fd924 ==============================
+[0m02:29:35.477774 [info ] [MainThread]: Running with dbt=1.11.11
+[0m02:29:35.478225 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'profiles_dir': 'dbt_project', 'quiet': 'False', 'no_print': 'None', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'invocation_command': 'dbt run --project-dir dbt_project --profiles-dir dbt_project', 'write_json': 'True', 'cache_selected_only': 'False', 'log_path': 'dbt_project/logs', 'fail_fast': 'False', 'log_format': 'default', 'debug': 'False', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'printer_width': '80', 'static_parser': 'True', 'use_colors': 'True', 'warn_error': 'None'}
+[0m02:29:35.736317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c9fbeeb7-69a0-41a8-bc77-cd23037fd924', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7564e021fb00>]}
+[0m02:29:35.817654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c9fbeeb7-69a0-41a8-bc77-cd23037fd924', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7564dd641790>]}
+[0m02:29:35.819317 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m02:29:35.927911 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m02:29:36.079368 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m02:29:36.079839 [debug] [MainThread]: Partial parsing: updated file: superstore://models/marts/sales_summary.sql
+[0m02:29:36.365330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c9fbeeb7-69a0-41a8-bc77-cd23037fd924', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7564d6198b00>]}
+[0m02:29:36.420984 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project/target/manifest.json
+[0m02:29:36.422469 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project/target/semantic_manifest.json
+[0m02:29:36.428297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c9fbeeb7-69a0-41a8-bc77-cd23037fd924', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7564d6199be0>]}
+[0m02:29:36.428636 [info ] [MainThread]: Found 2 models, 485 macros
+[0m02:29:36.428930 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c9fbeeb7-69a0-41a8-bc77-cd23037fd924', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7564d614ea80>]}
+[0m02:29:36.430500 [info ] [MainThread]: 
+[0m02:29:36.430835 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m02:29:36.431146 [info ] [MainThread]: 
+[0m02:29:36.431592 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m02:29:36.435609 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_superstore'
+[0m02:29:36.478268 [debug] [ThreadPool]: Using duckdb connection "list_superstore"
+[0m02:29:36.478637 [debug] [ThreadPool]: On list_superstore: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "list_superstore"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"superstore"'
+    
+  
+  
+[0m02:29:36.478869 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:29:36.496761 [debug] [ThreadPool]: SQL status: OK in 0.018 seconds
+[0m02:29:36.498168 [debug] [ThreadPool]: On list_superstore: Close
+[0m02:29:36.498798 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_superstore, now create_superstore_analytics)
+[0m02:29:36.499203 [debug] [ThreadPool]: Creating schema "database: "superstore"
+schema: "analytics"
+"
+[0m02:29:36.505179 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:29:36.505466 [debug] [ThreadPool]: On create_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "create_superstore_analytics"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='superstore'
+        and type='sqlite'
+    
+  
+[0m02:29:36.505683 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:29:36.507084 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m02:29:36.508147 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:29:36.508407 [debug] [ThreadPool]: On create_superstore_analytics: BEGIN
+[0m02:29:36.509060 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m02:29:36.509291 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:29:36.509504 [debug] [ThreadPool]: On create_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "create_superstore_analytics"} */
+
+    
+    
+        create schema if not exists "superstore"."analytics"
+    
+[0m02:29:36.510113 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m02:29:36.510745 [debug] [ThreadPool]: On create_superstore_analytics: COMMIT
+[0m02:29:36.510975 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:29:36.511242 [debug] [ThreadPool]: On create_superstore_analytics: COMMIT
+[0m02:29:36.511664 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m02:29:36.511931 [debug] [ThreadPool]: On create_superstore_analytics: Close
+[0m02:29:36.513081 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_superstore_analytics, now list_superstore_analytics)
+[0m02:29:36.517693 [debug] [ThreadPool]: Using duckdb connection "list_superstore_analytics"
+[0m02:29:36.518014 [debug] [ThreadPool]: On list_superstore_analytics: BEGIN
+[0m02:29:36.518223 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:29:36.519150 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m02:29:36.519389 [debug] [ThreadPool]: Using duckdb connection "list_superstore_analytics"
+[0m02:29:36.519609 [debug] [ThreadPool]: On list_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "list_superstore_analytics"} */
+select
+      'superstore' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'analytics'
+    and lower(table_catalog) = 'superstore'
+  
+[0m02:29:36.523324 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m02:29:36.524606 [debug] [ThreadPool]: On list_superstore_analytics: ROLLBACK
+[0m02:29:36.525748 [debug] [ThreadPool]: Failed to rollback 'list_superstore_analytics'
+[0m02:29:36.526041 [debug] [ThreadPool]: On list_superstore_analytics: Close
+[0m02:29:36.526785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c9fbeeb7-69a0-41a8-bc77-cd23037fd924', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7564d6241130>]}
+[0m02:29:36.527179 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:29:36.527419 [debug] [MainThread]: On master: BEGIN
+[0m02:29:36.527629 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:29:36.528310 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m02:29:36.528556 [debug] [MainThread]: On master: COMMIT
+[0m02:29:36.528779 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:29:36.528994 [debug] [MainThread]: On master: COMMIT
+[0m02:29:36.529513 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m02:29:36.529765 [debug] [MainThread]: On master: Close
+[0m02:29:36.532054 [debug] [Thread-1 (]: Began running node model.superstore.stg_orders
+[0m02:29:36.532635 [info ] [Thread-1 (]: 1 of 2 START sql view model analytics.stg_orders ............................... [RUN]
+[0m02:29:36.533053 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_superstore_analytics, now model.superstore.stg_orders)
+[0m02:29:36.533447 [debug] [Thread-1 (]: Began compiling node model.superstore.stg_orders
+[0m02:29:36.540069 [debug] [Thread-1 (]: Writing injected SQL for node "model.superstore.stg_orders"
+[0m02:29:36.540603 [debug] [Thread-1 (]: Began executing node model.superstore.stg_orders
+[0m02:29:36.570020 [debug] [Thread-1 (]: Writing runtime sql for node "model.superstore.stg_orders"
+[0m02:29:36.570656 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:29:36.571206 [debug] [Thread-1 (]: On model.superstore.stg_orders: BEGIN
+[0m02:29:36.571507 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:29:36.572528 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:29:36.572807 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:29:36.573083 [debug] [Thread-1 (]: On model.superstore.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+
+  
+  create view "superstore"."analytics"."stg_orders__dbt_tmp" as (
+    
+
+SELECT
+    "Row ID" AS row_id,
+    "Order ID" AS order_id,
+    CAST("Order Date" AS DATE) AS order_date,
+    CAST("Ship Date" AS DATE) AS ship_date,
+    "Ship Mode" AS ship_mode,
+    "Customer ID" AS customer_id,
+    "Customer Name" AS customer_name,
+    "Segment" AS segment,
+    "Country/Region" AS country_region,
+    "City" AS city,
+    "State/Province" AS state_province,
+    "Postal Code" AS postal_code,
+    "Region" AS region,
+    "Product ID" AS product_id,
+    "Category" AS category,
+    "Sub-Category" AS sub_category,
+    "Product Name" AS product_name,
+    CAST("Sales" AS DOUBLE) AS sales,
+    CAST("Quantity" AS INTEGER) AS quantity,
+    CAST("Discount" AS DOUBLE) AS discount,
+    CAST("Profit" AS DOUBLE) AS profit
+FROM raw_superstore
+  );
+
+[0m02:29:36.574085 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:29:36.580026 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:29:36.580347 [debug] [Thread-1 (]: On model.superstore.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+alter view "superstore"."analytics"."stg_orders" rename to "stg_orders__dbt_backup"
+[0m02:29:36.581095 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m02:29:36.584021 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:29:36.584397 [debug] [Thread-1 (]: On model.superstore.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+alter view "superstore"."analytics"."stg_orders__dbt_tmp" rename to "stg_orders"
+[0m02:29:36.585534 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:29:36.597702 [debug] [Thread-1 (]: On model.superstore.stg_orders: COMMIT
+[0m02:29:36.598082 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:29:36.598339 [debug] [Thread-1 (]: On model.superstore.stg_orders: COMMIT
+[0m02:29:36.649176 [debug] [Thread-1 (]: SQL status: OK in 0.050 seconds
+[0m02:29:36.655522 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:29:36.655888 [debug] [Thread-1 (]: On model.superstore.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+
+      drop view if exists "superstore"."analytics"."stg_orders__dbt_backup" cascade
+    
+[0m02:29:36.659549 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m02:29:36.661628 [debug] [Thread-1 (]: On model.superstore.stg_orders: Close
+[0m02:29:36.662850 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c9fbeeb7-69a0-41a8-bc77-cd23037fd924', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7564d676eff0>]}
+[0m02:29:36.663427 [info ] [Thread-1 (]: 1 of 2 OK created sql view model analytics.stg_orders .......................... [[32mOK[0m in 0.13s]
+[0m02:29:36.663909 [debug] [Thread-1 (]: Finished running node model.superstore.stg_orders
+[0m02:29:36.664917 [debug] [Thread-1 (]: Began running node model.superstore.sales_summary
+[0m02:29:36.665282 [info ] [Thread-1 (]: 2 of 2 START sql table model analytics.sales_summary ........................... [RUN]
+[0m02:29:36.665659 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.superstore.stg_orders, now model.superstore.sales_summary)
+[0m02:29:36.665929 [debug] [Thread-1 (]: Began compiling node model.superstore.sales_summary
+[0m02:29:36.668397 [debug] [Thread-1 (]: Writing injected SQL for node "model.superstore.sales_summary"
+[0m02:29:36.669045 [debug] [Thread-1 (]: Began executing node model.superstore.sales_summary
+[0m02:29:36.687234 [debug] [Thread-1 (]: Writing runtime sql for node "model.superstore.sales_summary"
+[0m02:29:36.687912 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m02:29:36.688187 [debug] [Thread-1 (]: On model.superstore.sales_summary: BEGIN
+[0m02:29:36.688435 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:29:36.689438 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:29:36.689852 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m02:29:36.690128 [debug] [Thread-1 (]: On model.superstore.sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.sales_summary"} */
+
+  
+    
+    
+
+    create  table
+      "superstore"."analytics"."sales_summary__dbt_tmp"
+  
+    as (
+      SELECT
+    region,
+    category,
+    SUM(sales) AS total_sales,
+    SUM(profit) AS total_profit,
+    AVG(discount) AS avg_discount
+FROM "superstore"."analytics"."stg_orders"
+GROUP BY region, category
+    );
+  
+  
+[0m02:29:36.698872 [debug] [Thread-1 (]: SQL status: OK in 0.008 seconds
+[0m02:29:36.701716 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m02:29:36.702015 [debug] [Thread-1 (]: On model.superstore.sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.sales_summary"} */
+alter table "superstore"."analytics"."sales_summary__dbt_tmp" rename to "sales_summary"
+[0m02:29:36.702880 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:29:36.707007 [debug] [Thread-1 (]: On model.superstore.sales_summary: COMMIT
+[0m02:29:36.707359 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m02:29:36.707658 [debug] [Thread-1 (]: On model.superstore.sales_summary: COMMIT
+[0m02:29:36.711032 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m02:29:36.713280 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m02:29:36.713589 [debug] [Thread-1 (]: On model.superstore.sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.sales_summary"} */
+
+      drop table if exists "superstore"."analytics"."sales_summary__dbt_backup" cascade
+    
+[0m02:29:36.714266 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m02:29:36.719543 [debug] [Thread-1 (]: On model.superstore.sales_summary: Close
+[0m02:29:36.720196 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c9fbeeb7-69a0-41a8-bc77-cd23037fd924', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7564cfd74500>]}
+[0m02:29:36.720690 [info ] [Thread-1 (]: 2 of 2 OK created sql table model analytics.sales_summary ...................... [[32mOK[0m in 0.05s]
+[0m02:29:36.721177 [debug] [Thread-1 (]: Finished running node model.superstore.sales_summary
+[0m02:29:36.722796 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:29:36.723181 [debug] [MainThread]: On master: BEGIN
+[0m02:29:36.723406 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m02:29:36.724229 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m02:29:36.724465 [debug] [MainThread]: On master: COMMIT
+[0m02:29:36.724682 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:29:36.724892 [debug] [MainThread]: On master: COMMIT
+[0m02:29:36.725440 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m02:29:36.725686 [debug] [MainThread]: On master: Close
+[0m02:29:36.725974 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:29:36.726179 [debug] [MainThread]: Connection 'model.superstore.sales_summary' was properly closed.
+[0m02:29:36.726408 [info ] [MainThread]: 
+[0m02:29:36.726894 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 0.29 seconds (0.29s).
+[0m02:29:36.727635 [debug] [MainThread]: Command end result
+[0m02:29:36.754641 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project/target/manifest.json
+[0m02:29:36.756112 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project/target/semantic_manifest.json
+[0m02:29:36.761511 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt_project/target/run_results.json
+[0m02:29:36.761780 [info ] [MainThread]: 
+[0m02:29:36.762129 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m02:29:36.762414 [info ] [MainThread]: 
+[0m02:29:36.762714 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m02:29:36.763589 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.362818, "process_in_blocks": "0", "process_kernel_time": 0.554178, "process_mem_max_rss": "185736", "process_out_blocks": "3272", "process_user_time": 3.488533}
+[0m02:29:36.763930 [debug] [MainThread]: Command `dbt run` succeeded at 02:29:36.763855 after 1.36 seconds
+[0m02:29:36.764223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7564dddb2420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7564de07a900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7564d62e8830>]}
+[0m02:29:36.764495 [debug] [MainThread]: Flushing usage events
+[0m02:29:37.333738 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:32:27.294080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f7d26391c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f7d2321ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f7d2321ee0>]}
+
+
+============================== 02:32:27.296858 | 18b86340-21fb-4194-9848-62cab041933d ==============================
+[0m02:32:27.296858 [info ] [MainThread]: Running with dbt=1.11.11
+[0m02:32:27.297319 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'log_path': 'dbt_project/logs', 'quiet': 'False', 'partial_parse': 'True', 'warn_error': 'None', 'use_colors': 'True', 'introspect': 'True', 'profiles_dir': 'dbt_project', 'version_check': 'True', 'log_format': 'default', 'empty': 'False', 'printer_width': '80', 'write_json': 'True', 'target_path': 'None', 'debug': 'False', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --project-dir dbt_project --profiles-dir dbt_project', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'static_parser': 'True'}
+[0m02:32:27.552798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '18b86340-21fb-4194-9848-62cab041933d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f7d2226990>]}
+[0m02:32:27.630079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '18b86340-21fb-4194-9848-62cab041933d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f7d4e0f0e0>]}
+[0m02:32:27.632009 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m02:32:27.760619 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m02:32:27.946408 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m02:32:27.946957 [debug] [MainThread]: Partial parsing: updated file: superstore://models/staging/stg_orders.sql
+[0m02:32:28.239589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '18b86340-21fb-4194-9848-62cab041933d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f7c9585100>]}
+[0m02:32:28.301168 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project/target/manifest.json
+[0m02:32:28.302805 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project/target/semantic_manifest.json
+[0m02:32:28.309864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '18b86340-21fb-4194-9848-62cab041933d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f7c9585bb0>]}
+[0m02:32:28.310276 [info ] [MainThread]: Found 2 models, 485 macros
+[0m02:32:28.310580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '18b86340-21fb-4194-9848-62cab041933d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f7c9542a80>]}
+[0m02:32:28.312006 [info ] [MainThread]: 
+[0m02:32:28.312426 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m02:32:28.312701 [info ] [MainThread]: 
+[0m02:32:28.313109 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m02:32:28.317117 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_superstore'
+[0m02:32:28.353923 [debug] [ThreadPool]: Using duckdb connection "list_superstore"
+[0m02:32:28.354290 [debug] [ThreadPool]: On list_superstore: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "list_superstore"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"superstore"'
+    
+  
+  
+[0m02:32:28.354944 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:32:28.371411 [debug] [ThreadPool]: SQL status: OK in 0.016 seconds
+[0m02:32:28.372800 [debug] [ThreadPool]: On list_superstore: Close
+[0m02:32:28.373695 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_superstore, now create_superstore_analytics)
+[0m02:32:28.374078 [debug] [ThreadPool]: Creating schema "database: "superstore"
+schema: "analytics"
+"
+[0m02:32:28.380414 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:32:28.380747 [debug] [ThreadPool]: On create_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "create_superstore_analytics"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='superstore'
+        and type='sqlite'
+    
+  
+[0m02:32:28.380982 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:32:28.382665 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m02:32:28.383903 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:32:28.384614 [debug] [ThreadPool]: On create_superstore_analytics: BEGIN
+[0m02:32:28.385411 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m02:32:28.385649 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:32:28.385868 [debug] [ThreadPool]: On create_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "create_superstore_analytics"} */
+
+    
+    
+        create schema if not exists "superstore"."analytics"
+    
+[0m02:32:28.386681 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m02:32:28.389991 [debug] [ThreadPool]: On create_superstore_analytics: COMMIT
+[0m02:32:28.390459 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m02:32:28.390859 [debug] [ThreadPool]: On create_superstore_analytics: COMMIT
+[0m02:32:28.391589 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m02:32:28.391853 [debug] [ThreadPool]: On create_superstore_analytics: Close
+[0m02:32:28.393120 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_superstore_analytics, now list_superstore_analytics)
+[0m02:32:28.397846 [debug] [ThreadPool]: Using duckdb connection "list_superstore_analytics"
+[0m02:32:28.398134 [debug] [ThreadPool]: On list_superstore_analytics: BEGIN
+[0m02:32:28.398346 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:32:28.399167 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m02:32:28.399412 [debug] [ThreadPool]: Using duckdb connection "list_superstore_analytics"
+[0m02:32:28.399640 [debug] [ThreadPool]: On list_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "list_superstore_analytics"} */
+select
+      'superstore' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'analytics'
+    and lower(table_catalog) = 'superstore'
+  
+[0m02:32:28.403031 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m02:32:28.404470 [debug] [ThreadPool]: On list_superstore_analytics: ROLLBACK
+[0m02:32:28.405630 [debug] [ThreadPool]: Failed to rollback 'list_superstore_analytics'
+[0m02:32:28.406028 [debug] [ThreadPool]: On list_superstore_analytics: Close
+[0m02:32:28.407011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '18b86340-21fb-4194-9848-62cab041933d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f7d4e0f050>]}
+[0m02:32:28.407370 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:32:28.407599 [debug] [MainThread]: On master: BEGIN
+[0m02:32:28.407810 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:32:28.408578 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m02:32:28.408835 [debug] [MainThread]: On master: COMMIT
+[0m02:32:28.409071 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:32:28.409284 [debug] [MainThread]: On master: COMMIT
+[0m02:32:28.409881 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m02:32:28.410119 [debug] [MainThread]: On master: Close
+[0m02:32:28.412260 [debug] [Thread-1 (]: Began running node model.superstore.stg_orders
+[0m02:32:28.412666 [info ] [Thread-1 (]: 1 of 2 START sql view model analytics.stg_orders ............................... [RUN]
+[0m02:32:28.413038 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_superstore_analytics, now model.superstore.stg_orders)
+[0m02:32:28.413311 [debug] [Thread-1 (]: Began compiling node model.superstore.stg_orders
+[0m02:32:28.419548 [debug] [Thread-1 (]: Writing injected SQL for node "model.superstore.stg_orders"
+[0m02:32:28.420032 [debug] [Thread-1 (]: Began executing node model.superstore.stg_orders
+[0m02:32:28.451088 [debug] [Thread-1 (]: Writing runtime sql for node "model.superstore.stg_orders"
+[0m02:32:28.451745 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:32:28.452029 [debug] [Thread-1 (]: On model.superstore.stg_orders: BEGIN
+[0m02:32:28.452349 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:32:28.453230 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:32:28.453631 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:32:28.453915 [debug] [Thread-1 (]: On model.superstore.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+
+  
+  create view "superstore"."analytics"."stg_orders__dbt_tmp" as (
+    
+
+SELECT
+    "Row ID" AS row_id,
+    "Order ID" AS order_id,
+    STRPTIME("Order Date", '%m/%d/%Y') AS order_date,
+    STRPTIME("Ship Date", '%m/%d/%Y') AS ship_date,
+    "Ship Mode" AS ship_mode,
+    "Customer ID" AS customer_id,
+    "Customer Name" AS customer_name,
+    "Segment" AS segment,
+    "Country/Region" AS country_region,
+    "City" AS city,
+    "State/Province" AS state_province,
+    "Postal Code" AS postal_code,
+    "Region" AS region,
+    "Product ID" AS product_id,
+    "Category" AS category,
+    "Sub-Category" AS sub_category,
+    "Product Name" AS product_name,
+    CAST("Sales" AS DOUBLE) AS sales,
+    CAST("Quantity" AS INTEGER) AS quantity,
+    CAST("Discount" AS DOUBLE) AS discount,
+    CAST("Profit" AS DOUBLE) AS profit
+FROM raw_superstore
+  );
+
+[0m02:32:28.455314 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:32:28.461330 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:32:28.461683 [debug] [Thread-1 (]: On model.superstore.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+alter view "superstore"."analytics"."stg_orders" rename to "stg_orders__dbt_backup"
+[0m02:32:28.462618 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:32:28.464792 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:32:28.465080 [debug] [Thread-1 (]: On model.superstore.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+alter view "superstore"."analytics"."stg_orders__dbt_tmp" rename to "stg_orders"
+[0m02:32:28.465761 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m02:32:28.477590 [debug] [Thread-1 (]: On model.superstore.stg_orders: COMMIT
+[0m02:32:28.477963 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:32:28.478222 [debug] [Thread-1 (]: On model.superstore.stg_orders: COMMIT
+[0m02:32:28.482339 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m02:32:28.488897 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m02:32:28.489379 [debug] [Thread-1 (]: On model.superstore.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+
+      drop view if exists "superstore"."analytics"."stg_orders__dbt_backup" cascade
+    
+[0m02:32:28.492659 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m02:32:28.494662 [debug] [Thread-1 (]: On model.superstore.stg_orders: Close
+[0m02:32:28.495884 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '18b86340-21fb-4194-9848-62cab041933d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f7c89336b0>]}
+[0m02:32:28.496466 [info ] [Thread-1 (]: 1 of 2 OK created sql view model analytics.stg_orders .......................... [[32mOK[0m in 0.08s]
+[0m02:32:28.497002 [debug] [Thread-1 (]: Finished running node model.superstore.stg_orders
+[0m02:32:28.498047 [debug] [Thread-1 (]: Began running node model.superstore.sales_summary
+[0m02:32:28.498406 [info ] [Thread-1 (]: 2 of 2 START sql table model analytics.sales_summary ........................... [RUN]
+[0m02:32:28.498782 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.superstore.stg_orders, now model.superstore.sales_summary)
+[0m02:32:28.499053 [debug] [Thread-1 (]: Began compiling node model.superstore.sales_summary
+[0m02:32:28.501291 [debug] [Thread-1 (]: Writing injected SQL for node "model.superstore.sales_summary"
+[0m02:32:28.501775 [debug] [Thread-1 (]: Began executing node model.superstore.sales_summary
+[0m02:32:28.524955 [debug] [Thread-1 (]: Writing runtime sql for node "model.superstore.sales_summary"
+[0m02:32:28.525760 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m02:32:28.526169 [debug] [Thread-1 (]: On model.superstore.sales_summary: BEGIN
+[0m02:32:28.526512 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:32:28.527484 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:32:28.527836 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m02:32:28.528173 [debug] [Thread-1 (]: On model.superstore.sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.sales_summary"} */
+
+  
+    
+    
+
+    create  table
+      "superstore"."analytics"."sales_summary__dbt_tmp"
+  
+    as (
+      SELECT
+    region,
+    category,
+    SUM(sales) AS total_sales,
+    SUM(profit) AS total_profit,
+    AVG(discount) AS avg_discount
+FROM "superstore"."analytics"."stg_orders"
+GROUP BY region, category
+    );
+  
+  
+[0m02:32:28.535092 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m02:32:28.540188 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m02:32:28.540583 [debug] [Thread-1 (]: On model.superstore.sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.sales_summary"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'analytics'
+      AND table_name = 'sales_summary'
+  
+[0m02:32:28.542467 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m02:32:28.543642 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m02:32:28.543925 [debug] [Thread-1 (]: On model.superstore.sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.sales_summary"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'analytics'
+      AND table_name = 'sales_summary'
+  
+[0m02:32:28.545233 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:32:28.547911 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m02:32:28.548335 [debug] [Thread-1 (]: On model.superstore.sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.sales_summary"} */
+alter table "superstore"."analytics"."sales_summary" rename to "sales_summary__dbt_backup"
+[0m02:32:28.549189 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m02:32:28.551599 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m02:32:28.551958 [debug] [Thread-1 (]: On model.superstore.sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.sales_summary"} */
+alter table "superstore"."analytics"."sales_summary__dbt_tmp" rename to "sales_summary"
+[0m02:32:28.552754 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m02:32:28.557361 [debug] [Thread-1 (]: On model.superstore.sales_summary: COMMIT
+[0m02:32:28.557740 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m02:32:28.557996 [debug] [Thread-1 (]: On model.superstore.sales_summary: COMMIT
+[0m02:32:28.561536 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m02:32:28.563648 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m02:32:28.563975 [debug] [Thread-1 (]: On model.superstore.sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.sales_summary"} */
+
+      drop table if exists "superstore"."analytics"."sales_summary__dbt_backup" cascade
+    
+[0m02:32:28.567128 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m02:32:28.568247 [debug] [Thread-1 (]: On model.superstore.sales_summary: Close
+[0m02:32:28.568716 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '18b86340-21fb-4194-9848-62cab041933d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f7c8aa6ab0>]}
+[0m02:32:28.569490 [info ] [Thread-1 (]: 2 of 2 OK created sql table model analytics.sales_summary ...................... [[32mOK[0m in 0.07s]
+[0m02:32:28.570078 [debug] [Thread-1 (]: Finished running node model.superstore.sales_summary
+[0m02:32:28.571747 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:32:28.572008 [debug] [MainThread]: On master: BEGIN
+[0m02:32:28.572305 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m02:32:28.573057 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m02:32:28.573298 [debug] [MainThread]: On master: COMMIT
+[0m02:32:28.573514 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:32:28.573722 [debug] [MainThread]: On master: COMMIT
+[0m02:32:28.574200 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m02:32:28.574454 [debug] [MainThread]: On master: Close
+[0m02:32:28.574749 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:32:28.575008 [debug] [MainThread]: Connection 'model.superstore.sales_summary' was properly closed.
+[0m02:32:28.575268 [info ] [MainThread]: 
+[0m02:32:28.575572 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 0.26 seconds (0.26s).
+[0m02:32:28.576315 [debug] [MainThread]: Command end result
+[0m02:32:28.605367 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project/target/manifest.json
+[0m02:32:28.606926 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project/target/semantic_manifest.json
+[0m02:32:28.612295 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt_project/target/run_results.json
+[0m02:32:28.612563 [info ] [MainThread]: 
+[0m02:32:28.613117 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m02:32:28.613492 [info ] [MainThread]: 
+[0m02:32:28.613797 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m02:32:28.614678 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.3662257, "process_in_blocks": "0", "process_kernel_time": 0.537601, "process_mem_max_rss": "186156", "process_out_blocks": "3288", "process_user_time": 3.55459}
+[0m02:32:28.615021 [debug] [MainThread]: Command `dbt run` succeeded at 02:32:28.614948 after 1.37 seconds
+[0m02:32:28.615323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f7d2bf4a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f7d28709e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f7cadb4b60>]}
+[0m02:32:28.615600 [debug] [MainThread]: Flushing usage events
+[0m02:32:29.218924 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:52:03.878801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d24be1073b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d24bfff5af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d24bd5ef4a0>]}
+
+
+============================== 03:52:03.887706 | f9fb609b-cebd-4a92-a07f-694819e37260 ==============================
+[0m03:52:03.887706 [info ] [MainThread]: Running with dbt=1.11.11
+[0m03:52:03.888170 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'log_format': 'default', 'use_colors': 'True', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'debug': 'False', 'target_path': 'None', 'write_json': 'True', 'introspect': 'True', 'log_path': 'dbt_project/logs', 'indirect_selection': 'eager', 'profiles_dir': 'dbt_project', 'use_experimental_parser': 'False', 'empty': 'False', 'partial_parse': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --project-dir dbt_project --profiles-dir dbt_project', 'printer_width': '80', 'version_check': 'True', 'fail_fast': 'False', 'no_print': 'None'}
+[0m03:52:04.218728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f9fb609b-cebd-4a92-a07f-694819e37260', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d24bd1ce660>]}
+[0m03:52:04.293556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f9fb609b-cebd-4a92-a07f-694819e37260', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d24bd059340>]}
+[0m03:52:04.296036 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m03:52:04.394459 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m03:52:04.621986 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m03:52:04.622473 [debug] [MainThread]: Partial parsing: added file: superstore://models/analytics/sales_summary.sql
+[0m03:52:04.856518 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two models with the name "sales_summary".
+  
+  Since these resources have the same name, dbt will be unable to find the correct resource
+  when looking for ref("sales_summary").
+  
+  To fix this, change the name of one of these resources:
+  - model.superstore.sales_summary (models/analytics/sales_summary.sql)
+  - model.superstore.sales_summary (models/marts/sales_summary.sql)
+[0m03:52:04.858043 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.0517274, "process_in_blocks": "62384", "process_kernel_time": 0.542176, "process_mem_max_rss": "166132", "process_out_blocks": "8", "process_user_time": 3.07503}
+[0m03:52:04.858517 [debug] [MainThread]: Command `dbt run` failed at 03:52:04.858435 after 1.05 seconds
+[0m03:52:04.858820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d24bdc2e660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d24be1bd0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d24b5314470>]}
+[0m03:52:04.859120 [debug] [MainThread]: Flushing usage events
+[0m03:52:05.509491 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:57:30.427162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ca92bf500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ca8951430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ca88afc80>]}
+
+
+============================== 03:57:30.432447 | af088986-d70b-46f8-984e-71849847f4d1 ==============================
+[0m03:57:30.432447 [info ] [MainThread]: Running with dbt=1.11.11
+[0m03:57:30.432917 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'log_format': 'default', 'invocation_command': 'dbt run --project-dir dbt_project --profiles-dir dbt_project', 'debug': 'False', 'warn_error': 'None', 'log_path': 'dbt_project/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'quiet': 'False', 'partial_parse': 'True', 'profiles_dir': 'dbt_project', 'log_cache_events': 'False', 'version_check': 'True', 'no_print': 'None', 'use_colors': 'True', 'static_parser': 'True', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'cache_selected_only': 'False', 'introspect': 'True', 'indirect_selection': 'eager', 'empty': 'False', 'send_anonymous_usage_stats': 'True'}
+[0m03:57:30.941556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'af088986-d70b-46f8-984e-71849847f4d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ca13b9e80>]}
+[0m03:57:31.018612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'af088986-d70b-46f8-984e-71849847f4d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ca7fd5010>]}
+[0m03:57:31.021235 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m03:57:31.121573 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m03:57:31.334737 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:57:31.335254 [debug] [MainThread]: Partial parsing: updated file: superstore://models/marts/sales_summary.sql
+[0m03:57:31.611415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'af088986-d70b-46f8-984e-71849847f4d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ca03f8b90>]}
+[0m03:57:31.665669 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project/target/manifest.json
+[0m03:57:31.668633 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project/target/semantic_manifest.json
+[0m03:57:31.820372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'af088986-d70b-46f8-984e-71849847f4d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ca03f9a00>]}
+[0m03:57:31.820887 [info ] [MainThread]: Found 2 models, 485 macros
+[0m03:57:31.821241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'af088986-d70b-46f8-984e-71849847f4d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1c9356eb70>]}
+[0m03:57:31.822768 [info ] [MainThread]: 
+[0m03:57:31.823104 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:57:31.823382 [info ] [MainThread]: 
+[0m03:57:31.823833 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m03:57:31.828064 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_superstore'
+[0m03:57:31.925934 [debug] [ThreadPool]: Using duckdb connection "list_superstore"
+[0m03:57:31.926301 [debug] [ThreadPool]: On list_superstore: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "list_superstore"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"superstore"'
+    
+  
+  
+[0m03:57:31.926551 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:57:31.961857 [debug] [ThreadPool]: SQL status: OK in 0.035 seconds
+[0m03:57:31.963021 [debug] [ThreadPool]: On list_superstore: Close
+[0m03:57:31.963685 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_superstore, now create_superstore_analytics)
+[0m03:57:31.964122 [debug] [ThreadPool]: Creating schema "database: "superstore"
+schema: "analytics"
+"
+[0m03:57:31.969915 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m03:57:31.970207 [debug] [ThreadPool]: On create_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "create_superstore_analytics"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='superstore'
+        and type='sqlite'
+    
+  
+[0m03:57:31.970474 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m03:57:31.972145 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m03:57:31.973354 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m03:57:31.973686 [debug] [ThreadPool]: On create_superstore_analytics: BEGIN
+[0m03:57:31.974318 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m03:57:31.974546 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m03:57:31.974760 [debug] [ThreadPool]: On create_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "create_superstore_analytics"} */
+
+    
+    
+        create schema if not exists "superstore"."analytics"
+    
+[0m03:57:31.975396 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m03:57:31.976046 [debug] [ThreadPool]: On create_superstore_analytics: COMMIT
+[0m03:57:31.976287 [debug] [ThreadPool]: Using duckdb connection "create_superstore_analytics"
+[0m03:57:31.976504 [debug] [ThreadPool]: On create_superstore_analytics: COMMIT
+[0m03:57:31.977092 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m03:57:31.977347 [debug] [ThreadPool]: On create_superstore_analytics: Close
+[0m03:57:31.978468 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_superstore_analytics, now list_superstore_analytics)
+[0m03:57:31.983085 [debug] [ThreadPool]: Using duckdb connection "list_superstore_analytics"
+[0m03:57:31.983366 [debug] [ThreadPool]: On list_superstore_analytics: BEGIN
+[0m03:57:31.983577 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m03:57:31.984345 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m03:57:31.984581 [debug] [ThreadPool]: Using duckdb connection "list_superstore_analytics"
+[0m03:57:31.984864 [debug] [ThreadPool]: On list_superstore_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "connection_name": "list_superstore_analytics"} */
+select
+      'superstore' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'analytics'
+    and lower(table_catalog) = 'superstore'
+  
+[0m03:57:31.990486 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m03:57:31.991765 [debug] [ThreadPool]: On list_superstore_analytics: ROLLBACK
+[0m03:57:31.993711 [debug] [ThreadPool]: Failed to rollback 'list_superstore_analytics'
+[0m03:57:31.993959 [debug] [ThreadPool]: On list_superstore_analytics: Close
+[0m03:57:31.994840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'af088986-d70b-46f8-984e-71849847f4d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1c9351b9b0>]}
+[0m03:57:31.995205 [debug] [MainThread]: Using duckdb connection "master"
+[0m03:57:31.995437 [debug] [MainThread]: On master: BEGIN
+[0m03:57:31.995651 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:57:31.996367 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m03:57:31.996604 [debug] [MainThread]: On master: COMMIT
+[0m03:57:31.996886 [debug] [MainThread]: Using duckdb connection "master"
+[0m03:57:31.997100 [debug] [MainThread]: On master: COMMIT
+[0m03:57:31.997606 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m03:57:31.997852 [debug] [MainThread]: On master: Close
+[0m03:57:32.000965 [debug] [Thread-1 (]: Began running node model.superstore.stg_orders
+[0m03:57:32.001362 [info ] [Thread-1 (]: 1 of 2 START sql view model analytics.stg_orders ............................... [RUN]
+[0m03:57:32.001757 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_superstore_analytics, now model.superstore.stg_orders)
+[0m03:57:32.002025 [debug] [Thread-1 (]: Began compiling node model.superstore.stg_orders
+[0m03:57:32.008581 [debug] [Thread-1 (]: Writing injected SQL for node "model.superstore.stg_orders"
+[0m03:57:32.009352 [debug] [Thread-1 (]: Began executing node model.superstore.stg_orders
+[0m03:57:32.036828 [debug] [Thread-1 (]: Writing runtime sql for node "model.superstore.stg_orders"
+[0m03:57:32.037492 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m03:57:32.037787 [debug] [Thread-1 (]: On model.superstore.stg_orders: BEGIN
+[0m03:57:32.038054 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:57:32.039093 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m03:57:32.039496 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m03:57:32.039786 [debug] [Thread-1 (]: On model.superstore.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+
+  
+  create view "superstore"."analytics"."stg_orders__dbt_tmp" as (
+    
+
+SELECT
+    "Row ID" AS row_id,
+    "Order ID" AS order_id,
+    STRPTIME("Order Date", '%m/%d/%Y') AS order_date,
+    STRPTIME("Ship Date", '%m/%d/%Y') AS ship_date,
+    "Ship Mode" AS ship_mode,
+    "Customer ID" AS customer_id,
+    "Customer Name" AS customer_name,
+    "Segment" AS segment,
+    "Country/Region" AS country_region,
+    "City" AS city,
+    "State/Province" AS state_province,
+    "Postal Code" AS postal_code,
+    "Region" AS region,
+    "Product ID" AS product_id,
+    "Category" AS category,
+    "Sub-Category" AS sub_category,
+    "Product Name" AS product_name,
+    CAST("Sales" AS DOUBLE) AS sales,
+    CAST("Quantity" AS INTEGER) AS quantity,
+    CAST("Discount" AS DOUBLE) AS discount,
+    CAST("Profit" AS DOUBLE) AS profit
+FROM raw_superstore
+  );
+
+[0m03:57:32.041315 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m03:57:32.046416 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m03:57:32.046713 [debug] [Thread-1 (]: On model.superstore.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+alter view "superstore"."analytics"."stg_orders" rename to "stg_orders__dbt_backup"
+[0m03:57:32.047653 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m03:57:32.049856 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m03:57:32.050141 [debug] [Thread-1 (]: On model.superstore.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+alter view "superstore"."analytics"."stg_orders__dbt_tmp" rename to "stg_orders"
+[0m03:57:32.050849 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m03:57:32.062542 [debug] [Thread-1 (]: On model.superstore.stg_orders: COMMIT
+[0m03:57:32.062928 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m03:57:32.063182 [debug] [Thread-1 (]: On model.superstore.stg_orders: COMMIT
+[0m03:57:32.067026 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m03:57:32.071960 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.stg_orders"
+[0m03:57:32.072283 [debug] [Thread-1 (]: On model.superstore.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.stg_orders"} */
+
+      drop view if exists "superstore"."analytics"."stg_orders__dbt_backup" cascade
+    
+[0m03:57:32.074924 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m03:57:32.076940 [debug] [Thread-1 (]: On model.superstore.stg_orders: Close
+[0m03:57:32.078641 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af088986-d70b-46f8-984e-71849847f4d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1c9293d400>]}
+[0m03:57:32.079118 [info ] [Thread-1 (]: 1 of 2 OK created sql view model analytics.stg_orders .......................... [[32mOK[0m in 0.08s]
+[0m03:57:32.079602 [debug] [Thread-1 (]: Finished running node model.superstore.stg_orders
+[0m03:57:32.080577 [debug] [Thread-1 (]: Began running node model.superstore.sales_summary
+[0m03:57:32.081611 [info ] [Thread-1 (]: 2 of 2 START sql table model analytics.sales_summary ........................... [RUN]
+[0m03:57:32.082035 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.superstore.stg_orders, now model.superstore.sales_summary)
+[0m03:57:32.082311 [debug] [Thread-1 (]: Began compiling node model.superstore.sales_summary
+[0m03:57:32.084503 [debug] [Thread-1 (]: Writing injected SQL for node "model.superstore.sales_summary"
+[0m03:57:32.085838 [debug] [Thread-1 (]: Began executing node model.superstore.sales_summary
+[0m03:57:32.103854 [debug] [Thread-1 (]: Writing runtime sql for node "model.superstore.sales_summary"
+[0m03:57:32.104485 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m03:57:32.104855 [debug] [Thread-1 (]: On model.superstore.sales_summary: BEGIN
+[0m03:57:32.105126 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:57:32.106069 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m03:57:32.106465 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m03:57:32.106751 [debug] [Thread-1 (]: On model.superstore.sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.sales_summary"} */
+
+  
+    
+    
+
+    create  table
+      "superstore"."analytics"."sales_summary__dbt_tmp"
+  
+    as (
+      SELECT
+    region,
+    category,
+    date_trunc('month', order_date) AS month,
+    SUM(sales) AS total_sales,
+    SUM(profit) AS total_profit,
+    AVG(discount) AS avg_discount,
+    COUNT(order_id) AS order_count
+FROM "superstore"."analytics"."stg_orders"
+GROUP BY region, category, month
+ORDER BY month, region, category
+    );
+  
+  
+[0m03:57:32.135476 [debug] [Thread-1 (]: SQL status: OK in 0.028 seconds
+[0m03:57:32.141048 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m03:57:32.141378 [debug] [Thread-1 (]: On model.superstore.sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.sales_summary"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'analytics'
+      AND table_name = 'sales_summary'
+  
+[0m03:57:32.142349 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m03:57:32.143551 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m03:57:32.143837 [debug] [Thread-1 (]: On model.superstore.sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.sales_summary"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'analytics'
+      AND table_name = 'sales_summary'
+  
+[0m03:57:32.144911 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m03:57:32.147362 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m03:57:32.147671 [debug] [Thread-1 (]: On model.superstore.sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.sales_summary"} */
+alter table "superstore"."analytics"."sales_summary" rename to "sales_summary__dbt_backup"
+[0m03:57:32.148380 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m03:57:32.150770 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m03:57:32.151051 [debug] [Thread-1 (]: On model.superstore.sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.sales_summary"} */
+alter table "superstore"."analytics"."sales_summary__dbt_tmp" rename to "sales_summary"
+[0m03:57:32.151653 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m03:57:32.156294 [debug] [Thread-1 (]: On model.superstore.sales_summary: COMMIT
+[0m03:57:32.156764 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m03:57:32.157045 [debug] [Thread-1 (]: On model.superstore.sales_summary: COMMIT
+[0m03:57:32.160377 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m03:57:32.162645 [debug] [Thread-1 (]: Using duckdb connection "model.superstore.sales_summary"
+[0m03:57:32.162932 [debug] [Thread-1 (]: On model.superstore.sales_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "superstore", "target_name": "dev", "node_id": "model.superstore.sales_summary"} */
+
+      drop table if exists "superstore"."analytics"."sales_summary__dbt_backup" cascade
+    
+[0m03:57:32.165371 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m03:57:32.166516 [debug] [Thread-1 (]: On model.superstore.sales_summary: Close
+[0m03:57:32.166979 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af088986-d70b-46f8-984e-71849847f4d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1c92a921b0>]}
+[0m03:57:32.167466 [info ] [Thread-1 (]: 2 of 2 OK created sql table model analytics.sales_summary ...................... [[32mOK[0m in 0.08s]
+[0m03:57:32.167942 [debug] [Thread-1 (]: Finished running node model.superstore.sales_summary
+[0m03:57:32.169422 [debug] [MainThread]: Using duckdb connection "master"
+[0m03:57:32.169678 [debug] [MainThread]: On master: BEGIN
+[0m03:57:32.169896 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m03:57:32.170573 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m03:57:32.170909 [debug] [MainThread]: On master: COMMIT
+[0m03:57:32.171199 [debug] [MainThread]: Using duckdb connection "master"
+[0m03:57:32.171502 [debug] [MainThread]: On master: COMMIT
+[0m03:57:32.172072 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m03:57:32.172467 [debug] [MainThread]: On master: Close
+[0m03:57:32.172875 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:57:32.173181 [debug] [MainThread]: Connection 'model.superstore.sales_summary' was properly closed.
+[0m03:57:32.173427 [info ] [MainThread]: 
+[0m03:57:32.173778 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 0.35 seconds (0.35s).
+[0m03:57:32.174632 [debug] [MainThread]: Command end result
+[0m03:57:32.198976 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project/target/manifest.json
+[0m03:57:32.200430 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project/target/semantic_manifest.json
+[0m03:57:32.206096 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt_project/target/run_results.json
+[0m03:57:32.206525 [info ] [MainThread]: 
+[0m03:57:32.207033 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m03:57:32.207500 [info ] [MainThread]: 
+[0m03:57:32.207895 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m03:57:32.209652 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.8579824, "process_in_blocks": "164368", "process_kernel_time": 0.609225, "process_mem_max_rss": "186148", "process_out_blocks": "3360", "process_user_time": 3.448213}
+[0m03:57:32.210085 [debug] [MainThread]: Command `dbt run` succeeded at 03:57:32.209999 after 1.86 seconds
+[0m03:57:32.210365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ca87d88c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ca8851910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ca806b4d0>]}
+[0m03:57:32.210636 [debug] [MainThread]: Flushing usage events
+[0m03:57:32.846909 [debug] [MainThread]: An error was encountered while trying to flush usage events

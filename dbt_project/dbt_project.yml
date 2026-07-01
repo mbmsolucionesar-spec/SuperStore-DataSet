@@ -1,0 +1,13 @@
+name: 'superstore'
+version: '1.0.0'
+profile: 'superstore'
+
+model-paths: ["models"]
+test-paths: ["tests"]
+
+models:
+  superstore:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table

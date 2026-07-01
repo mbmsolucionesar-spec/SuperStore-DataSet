@@ -1,2 +1,11 @@
 # SuperStore-DataSet
-Unidad III - Prueba Final BigData - Miguel Chura - Bastián Fernández - José Flores 
+Unidad III - Prueba Final BigData
+
+
+INTEGRANTES
+
+JOSE FLORES -
+BASTIAN FERNANDEZ -
+MIGUEL CHURA -
+ERICK MAMANI -
+WILLIAM YUCRA -
