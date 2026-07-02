@@ -94,7 +94,3 @@ SuperStore-DataSet - Guía de instalación y ejecución
                      git commit -m "mensaje"
                      git push origin main
    - Traer cambios remotos: git pull origin main --rebase
-
-Notas importantes
------------------
-- El archivo app.py debe estar limpio, sin marcas personales como "====> Miguel".
