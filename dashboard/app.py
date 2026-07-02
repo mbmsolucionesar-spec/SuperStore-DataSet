@@ -15,7 +15,6 @@ base_path = os.path.dirname(__file__)
 # Conexión a DuckDB
 db_path = os.path.join(base_path, "../data/superstore_dashboard.duckdb")
 con = duckdb.connect(db_path, read_only=True)
-#>>>>>>> Miguel
 df = con.execute("SELECT * FROM raw_superstore").fetchdf()
 con.close()
 
@@ -24,7 +23,6 @@ df["Order Date"] = pd.to_datetime(df["Order Date"], errors="coerce")
 df["Ship Date"] = pd.to_datetime(df["Ship Date"], errors="coerce")
 df["Delivery Days"] = (df["Ship Date"] - df["Order Date"]).dt.days
 
-#<<<<<<< HEAD
 # Inicializar app Dash
 app = dash.Dash(__name__, title="SuperStore Dashboard")
 
@@ -106,7 +104,6 @@ print("Lon min/max:", ventas_geo["lon"].min(), ventas_geo["lon"].max())
 app = dash.Dash(__name__, title="SuperStore Dashboard")
 
 # Estilo tarjetas KPI
-#>>>>>>> Miguel
 card_style = {
     "background": "#ffffff",
     "color": "#333",
@@ -117,7 +114,6 @@ card_style = {
     "boxShadow": "0 4px 8px rgba(0,0,0,0.1)",
     "fontFamily": "Helvetica Neue, Arial, sans-serif"
 }
-#<<<<<<< HEAD
 app.layout = html.Div(
     style={"padding": "20px", "fontFamily": "Helvetica Neue, Arial, sans-serif",
            "backgroundColor": "#f5f7fa", "color": "#333"},
@@ -210,7 +206,6 @@ app.layout = html.Div(
                   "boxShadow": "0 4px 8px rgba(0,0,0,0.1)", "marginBottom": "20px"})
     ]
 )
-#=======
 # Layout del dashboard
 app.layout = html.Div([
     html.H1("SuperStore Dashboard", style={"textAlign": "center"}),
@@ -265,7 +260,6 @@ app.layout = html.Div([
         )
     ], style={"marginTop": "20px"})
 ])
-#>>>>>>> Miguel
 @app.callback(
     [Output("time-series", "figure"),
      Output("category-sales", "figure"),
@@ -281,13 +275,12 @@ app.layout = html.Div([
      Input("date-range", "end_date")]
 )
 def update_dashboard(start_date, end_date):
-#<<<<<<< HEAD
     if start_date is None or end_date is None:
         filtered = df.copy()
     else:
         mask = (df["Order Date"] >= pd.to_datetime(start_date)) & (df["Order Date"] <= pd.to_datetime(end_date))
         filtered = df.loc[mask]
-#=======
+
     print("=== DEBUG CALLBACK ===")
     print("Start date:", start_date, "End date:", end_date)
 
@@ -299,14 +292,12 @@ def update_dashboard(start_date, end_date):
         filtered = df.copy()
 
     print("Filas en filtered:", len(filtered))
-#>>>>>>> Miguel
 
     # KPIs
     margin = (filtered["Profit"].sum() / filtered["Sales"].sum()) * 100 if filtered["Sales"].sum() > 0 else 0
     avg_delivery = filtered["Delivery Days"].mean()
 
     kpis = [
-#<<<<<<< HEAD
         html.Div([html.H3(f"${filtered['Sales'].sum():,.0f}", style={"color": "#222"}), html.P("Ventas Totales")], style=card_style),
         html.Div([html.H3(f"${filtered['Profit'].sum():,.0f}", style={"color": "#222"}), html.P("Ganancia Total")], style=card_style),
         html.Div([html.H3(f"{margin:.2f}%", style={"color": "#222"}), html.P("Margen de Ganancia")], style=card_style),
