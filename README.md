@@ -2,10 +2,11 @@
 Unidad III - Prueba Final BigData
 
 
-INTEGRANTES
+--- INTEGRANTES ---
 
-JOSE FLORES -
-BASTIAN FERNANDEZ -
-MIGUEL CHURA -
-ERICK MAMANI -
-WILLIAM YUCRA -
+- José Flores
+- Miguel Chura
+- Bastián Fernández
+- William Yucra
+- Erick Mamani
+
