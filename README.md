@@ -1,7 +1,6 @@
 # SuperStore-DataSet
 Unidad III - Prueba Final BigData
 
-
 -----------
 Integrantes
 ----------
