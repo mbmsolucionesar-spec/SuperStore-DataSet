@@ -2,9 +2,9 @@
 Unidad III - Prueba Final BigData
 
 
-=========================
+-----------
 INTEGRANTES
-=========================
+----------
 
 - José Flores
 - Bastián Fernández
@@ -12,9 +12,9 @@ INTEGRANTES
 - Erick Mamani
 - Willian Yucra
 
-=========================
+-----------------------
 MODELO MULTIDIMENSIONAL
-=========================
+-----------------------
 
 El proyecto implementa un modelo multidimensional basado en un esquema estrella
 (Star Schema), siguiendo la metodología de Kimball.
