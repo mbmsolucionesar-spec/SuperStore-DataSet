@@ -3,7 +3,7 @@ Unidad III - Prueba Final BigData
 
 
 -----------
-INTEGRANTES
+Integrantes
 ----------
 
 - José Flores
@@ -13,34 +13,34 @@ INTEGRANTES
 - Willian Yucra
 
 -----------------------
-MODELO MULTIDIMENSIONAL
+Modelo Multidimensional
 -----------------------
 
 El proyecto implementa un modelo multidimensional basado en un esquema estrella
 (Star Schema), siguiendo la metodología de Kimball.
 
-FACT TABLE
+Fact Table
 ----------
 fct_sales_summary
 
 Contiene las principales métricas de negocio obtenidas a partir de las órdenes
 de venta del Superstore Sales Dataset.
 
-MEDIDAS (Measures)
+Medidas (Measures)
 ------------------
 - order_count: cantidad de órdenes.
 - total_sales: ventas totales.
 - total_profit: ganancia total.
 - total_quantity: cantidad de productos vendidos.
 
-DIMENSIONES (Dimensions)
+Dimensiones (Dimensions)
 ------------------------
 - Tiempo (order_date): análisis por día, mes y año.
 - Región (region): comparación geográfica de las ventas.
 - Producto: categoría y subcategoría.
 - Cliente: segmentación de clientes.
 
-CONSULTAS OLAP
+Consultas OLAP
 --------------
 El modelo permite realizar consultas como:
 
