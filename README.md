@@ -51,3 +51,50 @@ El modelo permite realizar consultas como:
 
 Este esquema estrella fue implementado mediante dbt Core sobre DuckDB y sirve
 como base para los dashboards desarrollados en Plotly Dash.
+
+----------------------------------------------------
+SuperStore-DataSet - Guía de instalación y ejecución
+----------------------------------------------------
+
+1. Clonar el repositorio
+   git clone git@github.com:mbmsolucionesar-spec/SuperStore-DataSet.git
+   cd SuperStore-DataSet
+
+2. Crear entorno virtual
+   python3 -m venv .venv
+
+3. Activar entorno virtual
+   source .venv/bin/activate   (Linux/Mac)
+   .\.venv\Scripts\activate    (Windows PowerShell)
+
+4. Instalar dependencias
+   pip install -r requirements.txt
+
+5. Configuración de base de datos DuckDB
+   - El archivo de datos se encuentra en data/superstore_dashboard.duckdb
+   - Los scripts de ingesta y coordenadas están en la carpeta flows/
+
+6. Levantar el dashboard
+   python3 dashboard/app.py
+
+7. Acceder al dashboard
+   Abrir el navegador en http://127.0.0.1:8050/
+
+8. Uso de Prefect
+   - Los pipelines ETL se definen en flows/
+   - Para ejecutar un flow: prefect deployment run <nombre_del_flow>
+   - El servidor de Prefect se levanta con docker-compose up
+
+9. Actualizar dependencias
+   pip freeze > requirements.txt
+
+10. Comandos útiles de Git
+   - Ver estado: git status
+   - Subir cambios: git add .
+                     git commit -m "mensaje"
+                     git push origin main
+   - Traer cambios remotos: git pull origin main --rebase
+
+Notas importantes
+-----------------
+- El archivo app.py debe estar limpio, sin marcas personales como "====> Miguel".
