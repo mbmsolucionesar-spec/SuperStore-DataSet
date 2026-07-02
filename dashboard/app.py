@@ -27,7 +27,7 @@ df["Delivery Days"] = (df["Ship Date"] - df["Order Date"]).dt.days
 app = dash.Dash(__name__, title="SuperStore Dashboard")
 
 # Estilo claro para tarjetas KPI
-=======
+
 # Agrupar ventas por ciudad/estado/país
 ventas_df = df.groupby(["City","State/Province","Country/Region"], as_index=False).agg({
     "Sales":"sum",
