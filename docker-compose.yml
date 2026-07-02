@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  dashboard:
+    build: ./dashboard
+    container_name: superstore-dashboard
+    volumes:
+      - ./dashboard:/workspace/dashboard
+      - ./data:/workspace/data
+    ports:
+      - "8050:8050"
+    environment:
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - postgres-lab
+
+  postgres-lab:
+    image: postgres:15
+    container_name: superstore-postgres
+    environment:
+      POSTGRES_USER: estudiante
+      POSTGRES_PASSWORD: estudiante
+      POSTGRES_DB: superstore
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+
+  jupyter:
+    image: jupyter/base-notebook:latest
+    container_name: superstore-jupyter
+    volumes:
+      - ./notebooks:/home/jovyan/work
+      - ./data:/home/jovyan/data
+    ports:
+      - "8888:8888"
+    depends_on:
+      - postgres-lab
