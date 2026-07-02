@@ -7,7 +7,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 # Ruta base (carpeta donde está app.py)
-base_path = os.path.dirname(_file_)
+base_path = os.path.dirname(__file__)
 
 # Conexión a DuckDB
 db_path = os.path.join(base_path, "../data/superstore_dashboard.duckdb")
@@ -93,7 +93,7 @@ print("Lat min/max:", ventas_geo["lat"].min(), ventas_geo["lat"].max())
 print("Lon min/max:", ventas_geo["lon"].min(), ventas_geo["lon"].max())
 
 # Inicializar app Dash
-app = dash.Dash(_name_, title="SuperStore Dashboard")
+app = dash.Dash(__name__, title="SuperStore Dashboard")
 
 # Estilo tarjetas KPI
 card_style = {
@@ -306,6 +306,6 @@ def update_dashboard(start_date, end_date):
     return time_fig, cat_fig, seg_fig, reg_fig, scatter_fig, map_fig, kpis, gauges, table_data, table_columns
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     print("=== DEBUG APP START ===")
     app.run(debug=True, host="0.0.0.0", port=8050)
